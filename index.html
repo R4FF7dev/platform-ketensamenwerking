@@ -147,6 +147,21 @@
           <li><a href="#programma" class="text-sm font-medium text-ink/80 transition-colors hover:text-navy">Programma</a></li>
           <li><a href="#bijeenkomsten" class="text-sm font-medium text-ink/80 transition-colors hover:text-navy">Bijeenkomsten</a></li>
           <li><a href="#doelgroep" class="text-sm font-medium text-ink/80 transition-colors hover:text-navy">Voor wie</a></li>
+          <li class="relative">
+            <button
+              type="button"
+              id="archief-toggle"
+              class="inline-flex items-center gap-1 text-sm font-medium text-ink/80 transition-colors hover:text-navy"
+              aria-expanded="false"
+              aria-controls="archief-menu"
+            >
+              Archief
+              <svg class="icon h-3.5 w-3.5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div id="archief-menu" class="absolute left-0 top-full z-20 mt-2 hidden w-36 rounded-md border border-hairline bg-white py-2 shadow-lg">
+              <a href="archief.html#jaar-2025" class="block px-4 py-2 text-sm text-ink/80 hover:bg-surface hover:text-navy">2025</a>
+            </div>
+          </li>
           <li>
             <a href="#aanmelden" class="inline-flex items-center gap-2 rounded-md bg-orange px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-orange/90">
               Meld u aan
@@ -167,6 +182,8 @@
           <li><a href="#programma" class="block border-b border-hairline py-3 text-sm font-medium text-ink/80">Programma</a></li>
           <li><a href="#bijeenkomsten" class="block border-b border-hairline py-3 text-sm font-medium text-ink/80">Bijeenkomsten</a></li>
           <li><a href="#doelgroep" class="block border-b border-hairline py-3 text-sm font-medium text-ink/80">Voor wie</a></li>
+          <li class="border-b border-hairline py-3 text-sm font-medium text-ink/80">Archief</li>
+          <li><a href="archief.html#jaar-2025" class="block border-b border-hairline py-3 pl-4 text-sm text-ink/70">2025</a></li>
         </ul>
         <div class="mt-4">
           <a href="#aanmelden" class="inline-flex w-full items-center justify-center gap-2 rounded-md bg-orange px-4 py-3 text-sm font-semibold text-white">Meld u aan</a>
@@ -188,25 +205,25 @@
         <div class="lg:col-span-7">
           <div class="section-label">
             <svg class="icon h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
-            <span>High Potential Programma &middot; Jaarprogramma 2025</span>
+            <span id="hero-badge-text">Platform Ketensamenwerking &middot; Jaarprogramma 2026</span>
           </div>
-          <h1 class="mt-5 font-display text-4xl font-semibold leading-[1.05] text-navy-deep md:text-5xl lg:text-6xl">
-            Vijf bijeenkomsten die uw blik op ketensamenwerking verscherpen.
+          <h1 id="hero-heading" class="mt-5 font-display text-4xl font-semibold leading-[1.05] text-navy-deep md:text-5xl lg:text-6xl">
+            Twee programma&rsquo;s die uw blik op ketensamenwerking verscherpen.
           </h1>
           <div class="mt-7 max-w-2xl space-y-4 text-lg leading-relaxed text-slate-soft">
-            <p>
-              Platform Ketensamenwerking brengt managers, projectleiders en sleutelfiguren uit de
-              corporatie-, bouw- en installatiesector samen die willen uitblinken in het toepassen
-              van ketensamenwerking en RGS. In vier bijeenkomsten per jaar, met een extra vijfde
-              sessie, combineren we wetenschappelijke verdieping met de praktijk van koplopers in
-              het vak.
+            <p id="hero-intro">
+              Platform Ketensamenwerking brengt directeuren, bestuurders, managers, projectleiders
+              en sleutelfiguren uit de bouw- en vastgoedsector samen die willen uitblinken in het
+              toepassen van ketensamenwerking en RGS. Via het Executive Platform en het High
+              Potential Platform combineren we, elk in vier bijeenkomsten per jaar, wetenschappelijke
+              verdieping met de praktijk van koplopers in het vak.
             </p>
             <div id="hero-more-wrap" class="overflow-hidden transition-[height] duration-500 ease-in-out" style="height: 0px">
               <div id="hero-more" class="space-y-4 pt-4">
                 <p>
-                  Elke bijeenkomst duurt een middag: ontvangst en lunch, een inhoudelijk college door
-                  een vooraanstaand spreker, een tafeldiscussie waarin u het geleerde direct vertaalt
-                  naar concrete do&rsquo;s en don&rsquo;ts, en een borrel om na te praten.
+                  Elke bijeenkomst kent hetzelfde ritme: ontvangst, een inhoudelijk college door een
+                  vooraanstaand spreker, een tafeldiscussie waarin u het geleerde direct vertaalt naar
+                  concrete do&rsquo;s en don&rsquo;ts, en gelegenheid om na te praten.
                 </p>
               </div>
             </div>
@@ -280,11 +297,11 @@
             <div class="grid gap-px overflow-hidden rounded-lg border border-hairline bg-hairline sm:grid-cols-2">
               <div class="bg-navy p-6 text-white">
                 <div class="font-display text-2xl font-semibold text-orange">+</div>
-                <p class="mt-3 text-sm leading-relaxed text-white/85">Vier vaste bijeenkomsten en één extra sessie per jaar, telkens op donderdagmiddag.</p>
+                <p class="mt-3 text-sm leading-relaxed text-white/85">Twee programma&rsquo;s, Executive en High Potential, met elk vier bijeenkomsten per jaar op donderdag.</p>
               </div>
               <div class="bg-navy p-6 text-white">
                 <div class="font-display text-2xl font-semibold text-orange">+</div>
-                <p class="mt-3 text-sm leading-relaxed text-white/85">Sprekers uit wetenschap en praktijk, van Tilburg University tot ervaren interim-managers.</p>
+                <p class="mt-3 text-sm leading-relaxed text-white/85">Sprekers uit wetenschap en praktijk, van Nyenrode Business Universiteit tot ervaren bestuurders en interim-managers.</p>
               </div>
               <div class="bg-navy p-6 text-white">
                 <div class="font-display text-2xl font-semibold text-orange">+</div>
@@ -302,10 +319,78 @@
           </div>
         </div>
 
-        <div class="mt-14 flex flex-col items-center gap-3 border-t border-hairline pt-10 text-center">
-          <div class="text-xs font-semibold uppercase tracking-[0.18em] text-navy/50">In samenwerking met</div>
-          <img src="assets/logo_nyenrode.svg" alt="Nyenrode Business Universiteit" class="h-10 w-auto sm:h-12" />
-          <div class="text-xs tracking-wide text-slate-soft">Leadership &middot; Entrepreneurship &middot; Stewardship</div>
+        <div class="mt-16 border-t border-hairline pt-14">
+          <div class="mx-auto max-w-2xl text-center">
+            <div class="section-label justify-center"><span>Twee programma&rsquo;s</span></div>
+            <h3 class="mt-4 font-display text-2xl font-semibold text-navy-deep sm:text-3xl">Welk programma past bij u?</h3>
+            <p class="mt-5 text-sm leading-relaxed text-slate-soft">
+              Platform Ketensamenwerking bestaat uit twee programma&rsquo;s, elk gericht op een
+              andere doelgroep binnen dezelfde ambitie: uitblinken in ketensamenwerking.
+            </p>
+          </div>
+
+          <div class="mx-auto mt-10 grid max-w-5xl gap-6 sm:grid-cols-2">
+            <div class="flex flex-col rounded-lg border border-hairline bg-white p-6 shadow-sm sm:p-8">
+              <div class="flex items-start gap-4">
+                <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-navy/5 text-navy">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16a1 1 0 0 1 1 1v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a1 1 0 0 1 1-1Z"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M2 13h20"/></svg>
+                </span>
+                <div>
+                  <h4 class="font-display text-lg font-semibold text-navy-deep">Executive Platform Ketensamenwerking</h4>
+                  <div class="mt-1.5 inline-flex items-center rounded-full bg-orange/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-orange">
+                    Directeuren &amp; bestuurders &middot; bouw &amp; vastgoed
+                  </div>
+                </div>
+              </div>
+              <div class="mt-5 space-y-4 text-sm leading-relaxed text-slate-soft">
+                <p>
+                  Het Executive Platform brengt directeuren en bestuurders uit de bouw- en
+                  vastgoedsector samen met een uitdagende bouw- en verduurzamingsopgave, die
+                  ervan overtuigd zijn dat deze niet op de traditionele wijze te realiseren is.
+                </p>
+                <p class="rounded-md border-l-2 border-orange bg-surface py-2.5 pl-4 text-ink/75">
+                  Deelnemers worden geen lid om te netwerken, maar vanuit de intrinsieke
+                  motivatie om uit te blinken in het toepassen van ketensamenwerking.
+                </p>
+                <p>
+                  De onderwerpen in het platform maken concreet wat nodig is om, binnen de eigen
+                  organisatie én in de samenwerking met ketenpartners, de slag te maken naar een
+                  excellente ketenspeler.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex flex-col rounded-lg border border-hairline bg-white p-6 shadow-sm sm:p-8">
+              <div class="flex items-start gap-4">
+                <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-navy/5 text-navy">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9 12 4l10 5-10 5-10-5Z"/><path d="M6 11.5V17c0 1.5 3 3 6 3s6-1.5 6-3v-5.5"/><path d="M22 9v6"/></svg>
+                </span>
+                <div>
+                  <h4 class="font-display text-lg font-semibold text-navy-deep">High Potential Platform Ketensamenwerking</h4>
+                  <div class="mt-1.5 inline-flex items-center rounded-full bg-orange/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-orange">
+                    Managers, projectleiders &amp; sleutelfiguren &middot; bouw &amp; vastgoed
+                  </div>
+                </div>
+              </div>
+              <div class="mt-5 space-y-4 text-sm leading-relaxed text-slate-soft">
+                <p>
+                  Het High Potential Platform brengt managers, projectleiders en sleutelfiguren
+                  uit de bouw- en vastgoedsector samen met een uitdagende bouw-, onderhouds- en
+                  verduurzamingsopgave, die ervan overtuigd zijn dat deze niet op de traditionele
+                  wijze te realiseren is.
+                </p>
+                <p class="rounded-md border-l-2 border-orange bg-surface py-2.5 pl-4 text-ink/75">
+                  Deelnemers worden geen lid om te netwerken, maar vanuit de intrinsieke
+                  motivatie om uit te blinken in het toepassen van ketensamenwerking en RGS.
+                </p>
+                <p>
+                  De onderwerpen in het platform maken concreet wat nodig is om binnen de eigen
+                  organisatie de slag te maken naar een excellente ketenspeler, en om de externe
+                  keten zo optimaal mogelijk te laten functioneren.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -316,160 +401,487 @@
         <div class="grid gap-10 md:grid-cols-12">
           <div class="md:col-span-5">
             <div class="section-label"><span>Programma</span></div>
-            <h2 class="heading-rule mt-5 font-display text-3xl font-semibold md:text-4xl">Jaarprogramma 2025, vijf bijeenkomsten</h2>
+            <h2 class="heading-rule mt-5 font-display text-3xl font-semibold md:text-4xl">Jaarprogramma 2026</h2>
           </div>
           <p class="text-base leading-relaxed text-slate-soft md:col-span-7 md:pt-12">
-            Vijf bijeenkomsten vormen het jaarprogramma, waarvan één extra sessie.
-            Iedere bijeenkomst kent hetzelfde ritme: ontvangst en lunch, een college van een uur,
-            een tafeldiscussie waarin u het geleerde direct toepast, een gezamenlijke terugkoppeling
-            en een borrel om na te praten.
+            Platform Ketensamenwerking kent twee programma&rsquo;s op het terrein van Kasteel de
+            Vanenburg: het Executive Platform en het High Potential Platform. Kies hieronder uw
+            programma voor de volledige jaarplanning, sprekers en deelnamevoorwaarden.
           </p>
         </div>
 
-        <div class="mt-14 space-y-6">
+        <div class="mt-10 inline-flex rounded-lg border border-hairline bg-white p-1 shadow-sm" role="tablist">
+          <button
+            type="button"
+            id="bijeenkomsten-tab-executive"
+            class="bijeenkomsten-tab rounded-md bg-navy px-4 py-2.5 text-sm font-semibold text-white transition-colors sm:px-5"
+            data-tab="executive"
+            role="tab"
+            aria-selected="true"
+            aria-controls="bijeenkomsten-panel-executive"
+          >
+            Executive Platform
+          </button>
+          <button
+            type="button"
+            id="bijeenkomsten-tab-highpotential"
+            class="bijeenkomsten-tab rounded-md px-4 py-2.5 text-sm font-semibold text-slate-soft transition-colors hover:text-navy-deep sm:px-5"
+            data-tab="highpotential"
+            role="tab"
+            aria-selected="false"
+            aria-controls="bijeenkomsten-panel-highpotential"
+          >
+            High Potential Platform
+          </button>
+        </div>
 
-          <!-- Bijeenkomst 1 -->
-          <article id="bijeenkomst-1" class="group relative overflow-hidden rounded-lg border border-hairline bg-white p-8 transition-colors hover:border-orange/40">
-            <span class="absolute inset-y-0 left-0 w-0.5 bg-orange opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"></span>
+        <!-- Executive Platform panel -->
+        <div id="bijeenkomsten-panel-executive" class="bijeenkomsten-panel mt-10 space-y-6" role="tabpanel" aria-labelledby="bijeenkomsten-tab-executive">
+
+          <!-- Executive - Bijeenkomst 1 (geweest) -->
+          <article id="bijeenkomst-executive-1" class="relative overflow-hidden rounded-lg border border-hairline bg-white p-8">
             <div class="flex flex-wrap items-start justify-between gap-4">
               <div class="flex items-center gap-4">
                 <span class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-navy/5 text-navy">
-                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9 12 4l10 5-10 5-10-5Z"/><path d="M6 11.5V17c0 1.5 3 3 6 3s6-1.5 6-3v-5.5"/><path d="M22 9v6"/></svg>
                 </span>
                 <div>
-                  <div class="text-xs font-semibold uppercase tracking-[0.16em] text-orange">Bijeenkomst 1</div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-xs font-semibold uppercase tracking-[0.16em] text-orange">Bijeenkomst 1</span>
+                    <span class="rounded-full bg-hairline px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-slate-soft">Geweest</span>
+                  </div>
                   <div class="mt-1 flex items-center gap-1.5 text-sm text-slate-soft">
                     <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
-                    Donderdag 13 maart 2025 &middot; 12:00&ndash;15:30
+                    Donderdag 5 maart 2026 &middot; 15:30&ndash;20:00
                   </div>
                 </div>
               </div>
             </div>
 
             <h3 class="mt-6 font-display text-xl font-semibold text-navy-deep">
-              Datagedreven samenwerken en regisseren met impact
+              Laatste inzichten rondom ketensamenwerking vanuit de wetenschap en praktijk
             </h3>
-            <div class="mt-2 text-sm font-semibold text-navy">prof.dr. John Goedee, Tilburg University</div>
-            <p class="mt-4 max-w-3xl text-sm leading-relaxed text-slate-soft">
-              Samenwerken, regisseren en data science zijn belangrijke onderwerpen. John Goedee
-              biedt een handvat wanneer u verantwoordelijk bent of wordt voor een complex
-              datagedreven samenwerkingstraject. Hij laat zien welke rol vakkennis, intuïtie en
-              data daarin spelen. De deelnemers komen tot de conclusie dat samenwerken een vak is
-              dat niet onderschat mag worden, en dat er factoren zijn die essentieel zijn om
-              succesvol te kunnen samenwerken en regisseren. Intuïtie blijft belangrijk voor
-              professionals, maar data draagt in belangrijke mate bij aan effectieve besluitvorming.
-            </p>
-
-            <div class="mt-6 grid gap-x-8 gap-y-2 border-t border-hairline pt-6 text-sm text-slate-soft sm:grid-cols-2">
-              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>12:00&ndash;13:00 Ontvangst &amp; lunch</div>
-              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>13:00&ndash;14:00 College</div>
-              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>14:00&ndash;15:00 Tafeldiscussie: ervaringen delen, do&rsquo;s &amp; don&rsquo;ts</div>
-              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>15:00&ndash;15:30 Terugkoppeling &amp; reflectie</div>
-              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>15:30&ndash;16:00 Borrel en napraten</div>
+            <div class="mt-2 text-sm font-semibold text-navy">prof.dr. Jack van der Veen, hoogleraar Supply Chain Management, Nyenrode Business Universiteit</div>
+            <div class="mt-4 max-w-3xl space-y-4 text-sm leading-relaxed text-slate-soft">
+              <p>
+                De term ketensamenwerking heeft het afgelopen decennium een vaste plaats gekregen in
+                het bedrijfskundige jargon. Toch is er een aanzienlijk gat tussen wat er volgens de
+                theorie allemaal bereikt zou kunnen worden met meer en betere ketensamenwerking, en
+                wat er in de praktijk daadwerkelijk gebeurt.
+              </p>
+              <p class="rounded-md border-l-2 border-orange bg-surface py-2.5 pl-4 text-ink/75">
+                Ruim 15 jaar onderzoek naar precies dit gat: waarom blijkt ketensamenwerking zo
+                lastig, en wat kunnen we doen om het toch echt te praktiseren?
+              </p>
+              <p>
+                In dit college neemt Jack de deelnemers mee in de (on)mogelijkheden van de
+                implementatie van ketensamenwerking, binnen individuele organisaties alsook in de
+                externe keten, op basis van zijn industriebrede kennis.
+              </p>
             </div>
 
-            <div class="mt-6">
-              <a href="#aanmelden" data-interesse="Bijeenkomst 1, 13 maart 2025" class="bijeenkomst-cta inline-flex items-center gap-2 rounded-md bg-orange px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-orange/90">
-                Meld u aan voor deze bijeenkomst
-                <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-              </a>
+            <div class="mt-6 grid gap-x-8 gap-y-2 border-t border-hairline pt-6 text-sm text-slate-soft sm:grid-cols-2">
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>15:30&ndash;16:30 Ontvangst &amp; borrel</div>
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>16:30&ndash;17:30 College door Jack van der Veen (Nyenrode)</div>
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>17:30&ndash;19:00 Diner in het restaurant van het kasteel</div>
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>19:00&ndash;20:00 Tafeldiscussie: ervaringen delen, do&rsquo;s &amp; don&rsquo;ts</div>
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>20:00&ndash;20:30 Terugkoppeling &amp; reflectie</div>
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>20:30 Einde</div>
+            </div>
+
+            <div class="mt-6 flex items-center gap-2.5 rounded-md bg-surface px-4 py-3 text-xs text-slate-soft">
+              <svg class="icon h-4 w-4 shrink-0 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.5 2.5 5-5"/></svg>
+              Deze bijeenkomst heeft al plaatsgevonden. Leden kunnen de opname terugkijken via de SharePoint-omgeving.
             </div>
           </article>
 
-          <!-- Bijeenkomst 2 -->
-          <article id="bijeenkomst-2" class="group relative overflow-hidden rounded-lg border border-hairline bg-white p-8 transition-colors hover:border-orange/40">
-            <span class="absolute inset-y-0 left-0 w-0.5 bg-orange opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"></span>
+          <!-- Executive - Bijeenkomst 2 (geweest) -->
+          <article id="bijeenkomst-executive-2" class="relative overflow-hidden rounded-lg border border-hairline bg-white p-8">
             <div class="flex items-center gap-4">
               <span class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-navy/5 text-navy">
                 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6.5 6.5-6.5s6.5 2.9 6.5 6.5"/><circle cx="17.5" cy="9.5" r="2.75"/><path d="M15.8 13.6c2.6.4 4.7 2.7 4.7 5.9"/></svg>
               </span>
               <div>
-                <div class="text-xs font-semibold uppercase tracking-[0.16em] text-orange">Bijeenkomst 2</div>
+                <div class="flex items-center gap-2">
+                  <span class="text-xs font-semibold uppercase tracking-[0.16em] text-orange">Bijeenkomst 2</span>
+                  <span class="rounded-full bg-hairline px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-slate-soft">Geweest</span>
+                </div>
                 <div class="mt-1 flex items-center gap-1.5 text-sm text-slate-soft">
                   <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
-                  Donderdag 15 mei 2025 &middot; 12:00&ndash;15:30
+                  Donderdag 4 juni 2026 &middot; 15:30&ndash;20:00
                 </div>
               </div>
             </div>
 
             <h3 class="mt-6 font-display text-xl font-semibold text-navy-deep">
-              Hoe houd je mensen bij complexe samenwerkingsverbanden wendbaar en krachtig?
+              Het grondig evalueren van een bestaande samenwerking met meerdere ketenpartners
             </h3>
-            <div class="mt-2 text-sm font-semibold text-navy">Marion Muller, ViSa</div>
-            <p class="mt-4 max-w-3xl text-sm leading-relaxed text-slate-soft">
-              Marion heeft zich gespecialiseerd in het onderzoeken en ontwikkelen van de
-              &lsquo;zachte kant&rsquo; van samenwerken bij organisaties. Vanuit haar
-              praktijkervaring houdt ze de deelnemers een spiegel voor, kijkend naar hun eigen
-              samenwerkingsverbanden, en geeft ze handvatten om te kunnen verbeteren.
-              In dit college neemt Marion de deelnemers mee in hoe je (keten)samenwerkingsverbanden
-              wendbaar en krachtig maakt, wat de do&rsquo;s en dont&rsquo;s zijn en wat het kan
-              opleveren.
-            </p>
-
-            <div class="mt-6 grid gap-x-8 gap-y-2 border-t border-hairline pt-6 text-sm text-slate-soft sm:grid-cols-2">
-              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>12:00&ndash;13:00 Ontvangst &amp; lunch</div>
-              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>13:00&ndash;14:00 College door Marion Muller (ViSa)</div>
-              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>14:00&ndash;15:00 Tafeldiscussie: ervaringen delen, do&rsquo;s &amp; don&rsquo;ts</div>
-              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>15:00&ndash;15:30 Terugkoppeling &amp; reflectie</div>
-              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>15:30&ndash;16:00 Borrel en napraten</div>
+            <div class="mt-2 text-sm font-semibold text-navy">Ivo Hoppe, manager vastgoed, GoedeStede</div>
+            <div class="mt-4 max-w-3xl space-y-4 text-sm leading-relaxed text-slate-soft">
+              <p>
+                Waarom deden we dat, hoe deden we dat (de aanpak), en wat leerden we daarvan (de
+                bevindingen)? Vele partijen starten met veel ambitie aan de implementatie
+                van ketensamenwerking/RGS, met als doel niet alleen gegarandeerde productiecapaciteit,
+                maar ook betere prestaties op tijd, geld, kwaliteit en duurzaamheid dan traditioneel
+                mogelijk is. Dat vraagt om regelmatig te evalueren of de afgesproken doelen ook echt
+                gerealiseerd worden.
+              </p>
+              <p class="rounded-md border-l-2 border-orange bg-surface py-2.5 pl-4 text-ink/75">
+                Ivo neemt ons mee in de evaluatie die hij liet uitvoeren, niet alleen naar de eigen
+                organisatie, maar ook naar de &lsquo;zachte kant&rsquo; van de samenwerking tussen
+                GoedeStede en haar ketenpartners.
+              </p>
+              <p>
+                In zijn college deelt Ivo zijn ervaringen, leerpunten en do&rsquo;s en don&rsquo;ts
+                met de platformdeelnemers, om anderen te inspireren en te laten leren van zijn
+                valkuilen.
+              </p>
             </div>
 
-            <div class="mt-6">
-              <a href="#aanmelden" data-interesse="Bijeenkomst 2, 15 mei 2025" class="bijeenkomst-cta inline-flex items-center gap-2 rounded-md bg-orange px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-orange/90">
-                Meld u aan voor deze bijeenkomst
-                <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-              </a>
+            <div class="mt-6 grid gap-x-8 gap-y-2 border-t border-hairline pt-6 text-sm text-slate-soft sm:grid-cols-2">
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>15:30&ndash;16:30 Ontvangst &amp; borrel</div>
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>16:30&ndash;17:30 College door Ivo Hoppe (GoedeStede)</div>
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>17:30&ndash;19:00 Diner in het restaurant van het kasteel</div>
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>19:00&ndash;20:00 Tafeldiscussie: ervaringen delen, do&rsquo;s &amp; don&rsquo;ts</div>
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>20:00&ndash;20:30 Terugkoppeling &amp; reflectie</div>
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>20:30 Einde</div>
+            </div>
+
+            <div class="mt-6 flex items-center gap-2.5 rounded-md bg-surface px-4 py-3 text-xs text-slate-soft">
+              <svg class="icon h-4 w-4 shrink-0 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.5 2.5 5-5"/></svg>
+              Deze bijeenkomst heeft al plaatsgevonden. Leden kunnen de opname terugkijken via de SharePoint-omgeving.
             </div>
           </article>
 
-          <!-- Bijeenkomst 3 -->
-          <article id="bijeenkomst-3" class="group relative overflow-hidden rounded-lg border border-hairline bg-white p-8 transition-colors hover:border-orange/40">
+          <!-- Executive - Bijeenkomst 3 -->
+          <article id="bijeenkomst-executive-3" class="group relative overflow-hidden rounded-lg border border-hairline bg-white p-8 transition-colors hover:border-orange/40">
             <span class="absolute inset-y-0 left-0 w-0.5 bg-orange opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"></span>
             <div class="flex items-center gap-4">
               <span class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-navy/5 text-navy">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4c0 9-6 15-15 15H4v-1C4 10 10 4 19 4h1Z"/><path d="M9 15c3-3 6-6 10-10"/></svg>
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m15 9-2 6-6 2 2-6 6-2Z"/></svg>
               </span>
               <div>
                 <div class="text-xs font-semibold uppercase tracking-[0.16em] text-orange">Bijeenkomst 3</div>
                 <div class="mt-1 flex items-center gap-1.5 text-sm text-slate-soft">
                   <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
-                  Donderdag 18 september 2025 &middot; 12:00&ndash;15:30
+                  Donderdag 17 september 2026 &middot; 15:30&ndash;20:00
                 </div>
               </div>
             </div>
 
             <h3 class="mt-6 font-display text-xl font-semibold text-navy-deep">
-              Hoe geef je duurzaamheid vorm in de praktijk en neem je alle niveaus mee in je organisatie?
+              In vertrouwen werken aan de renovatie van het Binnenhof en de rol van kostenplus-contracten daarbij
             </h3>
-            <div class="mt-2 text-sm font-semibold text-navy">Luc Reusken, Van der Meijs</div>
-            <p class="mt-4 max-w-3xl text-sm leading-relaxed text-slate-soft">
-              Veel partijen in de corporatie-, bouw- en vastgoedketen hebben duurzaamheid hoog in
-              het vaandel staan. De grote uitdaging is echter om die ambitie te vertalen naar de
-              opgave die gerealiseerd moet worden, met impact op strategisch, tactisch en
-              operationeel niveau, binnen organisaties én binnen de keten. Luc heeft veel ervaring
-              aan de corporatiezijde en inmiddels ook aan de kant van de bouwer. In dit college
-              neemt hij de deelnemers mee in de (on)mogelijkheden van de implementatie van
-              duurzaamheidsbeleid binnen individuele organisaties én in de keten.
-            </p>
+            <div class="mt-2 text-sm font-semibold text-navy">Peter van Leeuwen, programmadirecteur Binnenhofrenovatie</div>
+            <div class="mt-4 max-w-3xl space-y-4 text-sm leading-relaxed text-slate-soft">
+              <p>
+                De bouw aan het Tweede Kamercomplex is officieel in uitvoering. Met de ondertekening
+                van de realisatiecontracten tussen de aannemers en het Rijksvastgoedbedrijf werd een
+                nieuwe mijlpaal in de renovatie van het Binnenhof bereikt. Peter van Leeuwen speelde
+                een belangrijke rol bij de totstandkoming van de kosten-pluscontracten.
+              </p>
+              <p class="rounded-md border-l-2 border-orange bg-surface py-2.5 pl-4 text-ink/75">
+                Wat zijn de voordelen van kosten-plus, en waarom is het de beste manier om een complex
+                project als de Binnenhofrenovatie aan de gang te krijgen? &ldquo;Samenwerken begint
+                bij vertrouwen&rdquo;, en daar heeft Peter stevig op ingezet.
+              </p>
+              <p>
+                In zijn lezing neemt Peter de deelnemers mee in zijn ervaringen met het managen van
+                een complex project als de Binnenhofrenovatie: de leerpunten, de do&rsquo;s en
+                don&rsquo;ts, en het belang van goede incentives en het bouwen aan vertrouwen.
+              </p>
+            </div>
 
             <div class="mt-6 grid gap-x-8 gap-y-2 border-t border-hairline pt-6 text-sm text-slate-soft sm:grid-cols-2">
-              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>12:00&ndash;13:00 Ontvangst &amp; lunch</div>
-              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>13:00&ndash;14:00 College door Luc Reusken (Van der Meijs)</div>
-              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>14:00&ndash;15:00 Tafeldiscussie: ervaringen delen, do&rsquo;s &amp; don&rsquo;ts</div>
-              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>15:00&ndash;15:30 Terugkoppeling &amp; reflectie</div>
-              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>15:30&ndash;16:00 Borrel en napraten</div>
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>15:30&ndash;16:30 Ontvangst &amp; borrel</div>
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>16:30&ndash;17:30 College door Peter van Leeuwen (Binnenhof)</div>
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>17:30&ndash;19:00 Diner in het restaurant van het kasteel</div>
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>19:00&ndash;20:00 Tafeldiscussie: ervaringen delen, do&rsquo;s &amp; don&rsquo;ts</div>
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>20:00&ndash;20:30 Terugkoppeling &amp; reflectie</div>
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>20:30 Einde</div>
             </div>
 
             <div class="mt-6">
-              <a href="#aanmelden" data-interesse="Bijeenkomst 3, 18 september 2025" class="bijeenkomst-cta inline-flex items-center gap-2 rounded-md bg-orange px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-orange/90">
+              <a href="#aanmelden" data-interesse="Executive Platform, Bijeenkomst 3 (17 september 2026)" class="bijeenkomst-cta inline-flex items-center gap-2 rounded-md bg-orange px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-orange/90">
                 Meld u aan voor deze bijeenkomst
                 <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
               </a>
             </div>
           </article>
 
-          <!-- Bijeenkomst 4 -->
-          <article id="bijeenkomst-4" class="group relative overflow-hidden rounded-lg border border-hairline bg-white p-8 transition-colors hover:border-orange/40">
+          <!-- Executive - Bijeenkomst 4 -->
+          <article id="bijeenkomst-executive-4" class="group relative overflow-hidden rounded-lg border border-hairline bg-white p-8 transition-colors hover:border-orange/40">
+            <span class="absolute inset-y-0 left-0 w-0.5 bg-orange opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"></span>
+            <div class="flex items-center gap-4">
+              <span class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-navy/5 text-navy">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg>
+              </span>
+              <div>
+                <div class="text-xs font-semibold uppercase tracking-[0.16em] text-orange">Bijeenkomst 4</div>
+                <div class="mt-1 flex items-center gap-1.5 text-sm text-slate-soft">
+                  <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+                  Donderdag 12 november 2026 &middot; 15:30&ndash;20:00
+                </div>
+              </div>
+            </div>
+
+            <h3 class="mt-6 font-display text-xl font-semibold text-navy-deep">
+              Ervaringen rondom de energietransitie en de opschaling van de publieke infrastructuur via ketensamenwerking
+            </h3>
+            <div class="mt-2 text-sm font-semibold text-navy">Michel Wauters, directeur hoogspanningsstations, Enexis</div>
+            <div class="mt-4 max-w-3xl space-y-4 text-sm leading-relaxed text-slate-soft">
+              <p>
+                De energietransitie vraagt een ongekende opschaling van netbeheerders, in een context
+                van toenemende maatschappelijke druk: het elektriciteitsnet is overvol en wachttijden
+                voor klanten groeien. Waar voorheen voorspelbaarheid en technische standaarden leidend
+                waren, zijn opschaling, standaardisatie en integrale ketensamenwerking inmiddels de
+                leidende principes geworden.
+              </p>
+              <p class="rounded-md border-l-2 border-orange bg-surface py-2.5 pl-4 text-ink/75">
+                Michel geeft een inkijkje in wat deze ontwikkelingen betekenen voor de materiaalketen
+                van Enexis, die jaar op jaar dubbele-cijferige groei doormaakt.
+              </p>
+              <p>
+                Vanuit zijn rol reflecteert Michel op het belang van intensieve ketensamenwerking met
+                andere partijen in de keten: hoe ze dat hebben aangepakt, welke impact dat heeft gehad
+                en zijn visie op de toekomst, inclusief de veranderde invulling van de
+                opdrachtgeverrol en wat dat betekende voor de opdrachtnemers.
+              </p>
+            </div>
+
+            <div class="mt-6 grid gap-x-8 gap-y-2 border-t border-hairline pt-6 text-sm text-slate-soft sm:grid-cols-2">
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>15:30&ndash;16:30 Ontvangst &amp; borrel</div>
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>16:30&ndash;17:30 College door Michel Wauters (Enexis)</div>
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>17:30&ndash;19:00 Diner in het restaurant van het kasteel</div>
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>19:00&ndash;20:00 Tafeldiscussie: ervaringen delen, do&rsquo;s &amp; don&rsquo;ts</div>
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>20:00&ndash;20:30 Terugkoppeling &amp; reflectie</div>
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>20:30 Einde</div>
+            </div>
+
+            <div class="mt-6">
+              <a href="#aanmelden" data-interesse="Executive Platform, Bijeenkomst 4 (12 november 2026)" class="bijeenkomst-cta inline-flex items-center gap-2 rounded-md bg-orange px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-orange/90">
+                Meld u aan voor deze bijeenkomst
+                <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Executive - Locatie, zekerheden, deelname -->
+          <div class="grid gap-6 sm:grid-cols-2">
+            <div class="rounded-lg border border-hairline bg-white p-6">
+              <div class="flex items-center gap-2.5">
+                <svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.5 7-11a7 7 0 1 0-14 0c0 4.5 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                <h4 class="font-display text-base font-semibold text-navy-deep">Locatie</h4>
+              </div>
+              <p class="mt-3 text-sm leading-relaxed text-slate-soft">
+                De platformbijeenkomsten vinden plaats op het terrein van Kasteel de Vanenburg,
+                Vanenburgerallee 13, 3882 RH te Putten. Ontvangst en diner vinden plaats in het
+                kasteel; de lezingen vinden plaats in de Oranjerie, direct naast het kasteel.
+              </p>
+            </div>
+
+            <div class="rounded-lg border border-hairline bg-white p-6">
+              <div class="flex items-center gap-2.5">
+                <svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 4 8.5 8 9.5 4-1 8-4.5 8-9.5V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+                <h4 class="font-display text-base font-semibold text-navy-deep">Zekerheden</h4>
+              </div>
+              <ul class="mt-3 space-y-2 text-sm leading-relaxed text-slate-soft">
+                <li class="flex gap-2"><span class="text-orange">&middot;</span>Alle lezingen zijn zowel live als via internet te volgen, zodat iedereen kan deelnemen.</li>
+                <li class="flex gap-2"><span class="text-orange">&middot;</span>Enkele dagen later staat de lezing in een afgeschermde Vimeo-omgeving, zodat u haar ook op een ander moment kunt terugkijken.</li>
+                <li class="flex gap-2"><span class="text-orange">&middot;</span>Bij de live bijeenkomst neemt u 1 introducé mee; volgt u via internet, dan kunnen maximaal 3 introducés meekijken.</li>
+                <li class="flex gap-2"><span class="text-orange">&middot;</span>Alle hand-outs en video-opnamen staan voor leden overzichtelijk in een eigen SharePoint-omgeving.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="rounded-lg border border-navy/15 bg-navy p-6 text-white sm:p-8">
+            <div class="flex flex-wrap items-center justify-between gap-6">
+              <div>
+                <div class="text-xs font-semibold uppercase tracking-[0.16em] text-orange">Deelnemen</div>
+                <div class="mt-2 font-display text-2xl font-semibold">&euro;1.600 <span class="text-sm font-normal text-white/60">ex. btw per jaar</span></div>
+                <p class="mt-3 max-w-lg text-sm leading-relaxed text-white/75">
+                  Voor de 4 bijeenkomsten van het Executive Platform, inclusief borrel, diner en
+                  introducé (1 live en 3 digitaal). Stapt u later in, dan betaalt u naar rato van het
+                  aantal bijeenkomsten dat nog resteert in het lopende jaar.
+                </p>
+              </div>
+              <a href="#aanmelden" data-interesse="Executive Platform, volledig jaarprogramma 2026" class="bijeenkomst-cta inline-flex shrink-0 items-center gap-2 rounded-md bg-orange px-5 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-orange/90">
+                Meld u aan voor het Executive Platform
+                <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- High Potential Platform panel -->
+        <div id="bijeenkomsten-panel-highpotential" class="bijeenkomsten-panel mt-10 hidden space-y-6" role="tabpanel" aria-labelledby="bijeenkomsten-tab-highpotential">
+
+          <!-- High Potential - Bijeenkomst 1 (geweest) -->
+          <article id="bijeenkomst-hp-1" class="relative overflow-hidden rounded-lg border border-hairline bg-white p-8">
+            <div class="flex items-center gap-4">
+              <span class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-navy/5 text-navy">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>
+              </span>
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="text-xs font-semibold uppercase tracking-[0.16em] text-orange">Bijeenkomst 1</span>
+                  <span class="rounded-full bg-hairline px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-slate-soft">Geweest</span>
+                </div>
+                <div class="mt-1 flex items-center gap-1.5 text-sm text-slate-soft">
+                  <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+                  Donderdag 5 maart 2026 &middot; 12:00&ndash;15:30
+                </div>
+              </div>
+            </div>
+
+            <h3 class="mt-6 font-display text-xl font-semibold text-navy-deep">
+              RGS met een focus op TCO-optimalisatie en de principes van ketensamenwerking als aanjager tot prestatiedoorbraken
+            </h3>
+            <div class="mt-2 text-sm font-semibold text-navy">Marcel Noordhuis &amp; Egbert Kunst, Ketenmanagement Interim &amp; Advies</div>
+            <div class="mt-4 max-w-3xl space-y-4 text-sm leading-relaxed text-slate-soft">
+              <p>
+                Bij RGS richt men zich enerzijds op het optimaliseren van het keuzeproces rondom
+                onderhoud, nieuwbouw en verduurzamen, met als doel de levensduurkosten (TCO) zo laag
+                mogelijk en de kwaliteit zo hoog mogelijk te krijgen. Anderzijds betekent dit dat
+                bouwpartijen steeds professioneler moeten samenwerken om die opgave efficiënt en
+                effectief uit te voeren.
+              </p>
+              <p class="rounded-md border-l-2 border-orange bg-surface py-2.5 pl-4 text-ink/75">
+                RGS-partijen hebben twee parallelle uitdagingen: werken aan hun interne en externe
+                organisatieontwikkeling door ketensamenwerking, en tegelijk steeds beter worden in het
+                adviseren, uitvoeren en realiseren van projecten en het beheren van vastgoed.
+              </p>
+              <p>
+                In dit college nemen Egbert en Marcel de deelnemers mee in de (on)mogelijkheden van de
+                implementatie van ketensamenwerking/RGS, binnen individuele organisaties alsook in de
+                externe keten.
+              </p>
+            </div>
+
+            <div class="mt-6 grid gap-x-8 gap-y-2 border-t border-hairline pt-6 text-sm text-slate-soft sm:grid-cols-2">
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>12:00&ndash;13:00 Ontvangst &amp; lunch</div>
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>13:00&ndash;14:00 College door Marcel &amp; Egbert (Ketenmanagement)</div>
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>14:00&ndash;15:00 Tafeldiscussie: ervaringen delen, do&rsquo;s &amp; don&rsquo;ts</div>
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>15:00&ndash;15:30 Terugkoppeling &amp; reflectie</div>
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>15:30&ndash;16:00 Borrel en napraten</div>
+            </div>
+
+            <div class="mt-6 flex items-center gap-2.5 rounded-md bg-surface px-4 py-3 text-xs text-slate-soft">
+              <svg class="icon h-4 w-4 shrink-0 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.5 2.5 5-5"/></svg>
+              Deze bijeenkomst heeft al plaatsgevonden. Leden kunnen de opname terugkijken via de SharePoint-omgeving.
+            </div>
+          </article>
+
+          <!-- High Potential - Bijeenkomst 2 (geweest) -->
+          <article id="bijeenkomst-hp-2" class="relative overflow-hidden rounded-lg border border-hairline bg-white p-8">
+            <div class="flex items-center gap-4">
+              <span class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-navy/5 text-navy">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9 12 4l10 5-10 5-10-5Z"/><path d="M6 11.5V17c0 1.5 3 3 6 3s6-1.5 6-3v-5.5"/><path d="M22 9v6"/></svg>
+              </span>
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="text-xs font-semibold uppercase tracking-[0.16em] text-orange">Bijeenkomst 2</span>
+                  <span class="rounded-full bg-hairline px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-slate-soft">Geweest</span>
+                </div>
+                <div class="mt-1 flex items-center gap-1.5 text-sm text-slate-soft">
+                  <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+                  Donderdag 4 juni 2026 &middot; 12:00&ndash;15:30
+                </div>
+              </div>
+            </div>
+
+            <h3 class="mt-6 font-display text-xl font-semibold text-navy-deep">
+              Laatste inzichten rondom ketensamenwerking vanuit de wetenschap en praktijk
+            </h3>
+            <div class="mt-2 text-sm font-semibold text-navy">prof.dr. Jack van der Veen, hoogleraar Supply Chain Management, Nyenrode Business Universiteit</div>
+            <div class="mt-4 max-w-3xl space-y-4 text-sm leading-relaxed text-slate-soft">
+              <p>
+                De term ketensamenwerking heeft het afgelopen decennium een vaste plaats gekregen in
+                het bedrijfskundige jargon. Toch is er een aanzienlijk gat tussen wat er volgens de
+                theorie allemaal bereikt zou kunnen worden met meer en betere ketensamenwerking, en
+                wat er in de praktijk daadwerkelijk gebeurt.
+              </p>
+              <p class="rounded-md border-l-2 border-orange bg-surface py-2.5 pl-4 text-ink/75">
+                Ruim 15 jaar onderzoek naar precies dit gat: waarom blijkt ketensamenwerking zo
+                lastig, en wat kunnen we doen om het toch echt te praktiseren?
+              </p>
+              <p>
+                In dit college neemt Jack de deelnemers mee in de (on)mogelijkheden van de
+                implementatie van ketensamenwerking, binnen individuele organisaties alsook in de
+                externe keten, op basis van zijn industriebrede kennis.
+              </p>
+            </div>
+
+            <div class="mt-6 grid gap-x-8 gap-y-2 border-t border-hairline pt-6 text-sm text-slate-soft sm:grid-cols-2">
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>12:00&ndash;13:00 Ontvangst &amp; lunch</div>
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>13:00&ndash;14:00 College door Jack van der Veen (Nyenrode)</div>
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>14:00&ndash;15:00 Tafeldiscussie: ervaringen delen, do&rsquo;s &amp; don&rsquo;ts</div>
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>15:00&ndash;15:30 Terugkoppeling &amp; reflectie</div>
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>15:30&ndash;16:00 Borrel en napraten</div>
+            </div>
+
+            <div class="mt-6 flex items-center gap-2.5 rounded-md bg-surface px-4 py-3 text-xs text-slate-soft">
+              <svg class="icon h-4 w-4 shrink-0 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.5 2.5 5-5"/></svg>
+              Deze bijeenkomst heeft al plaatsgevonden. Leden kunnen de opname terugkijken via de SharePoint-omgeving.
+            </div>
+          </article>
+
+          <!-- High Potential - Bijeenkomst 3 -->
+          <article id="bijeenkomst-hp-3" class="group relative overflow-hidden rounded-lg border border-hairline bg-white p-8 transition-colors hover:border-orange/40">
+            <span class="absolute inset-y-0 left-0 w-0.5 bg-orange opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"></span>
+            <div class="flex items-center gap-4">
+              <span class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-navy/5 text-navy">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="12" width="3" height="6" rx="0.5"/><rect x="12" y="8" width="3" height="10" rx="0.5"/><rect x="17" y="5" width="3" height="13" rx="0.5"/></svg>
+              </span>
+              <div>
+                <div class="text-xs font-semibold uppercase tracking-[0.16em] text-orange">Bijeenkomst 3</div>
+                <div class="mt-1 flex items-center gap-1.5 text-sm text-slate-soft">
+                  <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+                  Donderdag 17 september 2026 &middot; 12:00&ndash;15:30
+                </div>
+              </div>
+            </div>
+
+            <h3 class="mt-6 font-display text-xl font-semibold text-navy-deep">
+              Voorspelbaar onderhoud: de route naar optimale vervangingsmomenten en budgetplanning
+            </h3>
+            <div class="mt-2 text-sm font-semibold text-navy">Brendan Kleer, Croonwolter&amp;dros</div>
+            <div class="mt-4 max-w-3xl space-y-4 text-sm leading-relaxed text-slate-soft">
+              <p>
+                De voordelen van voorspelbaar onderhoud zijn duidelijk: met inzicht in de conditie van
+                uw assets kunt u operationeel beter plannen, financieel voorspelbaarder zijn en
+                besparen zonder extra risico&rsquo;s en zonder in te leveren op prestaties.
+              </p>
+              <p class="rounded-md border-l-2 border-orange bg-surface py-2.5 pl-4 text-ink/75">
+                Hoe zorgt u voor de implementatie van deze strategie in uw bedrijf of project? En
+                waar zit de urgentie om de nodige digitalisering toe te passen?
+              </p>
+              <p>
+                Brendan brengt zijn kennis en kunde in om via slimme inzet van data het
+                onderhoudsproces slimmer in te richten, voorspelbaarder te maken en de TCO te
+                verlagen.
+              </p>
+            </div>
+
+            <div class="mt-6 grid gap-x-8 gap-y-2 border-t border-hairline pt-6 text-sm text-slate-soft sm:grid-cols-2">
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>12:00&ndash;13:00 Ontvangst &amp; lunch</div>
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>13:00&ndash;14:00 College door Brendan Kleer (Croonwolter&amp;dros)</div>
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>14:00&ndash;15:00 Tafeldiscussie: ervaringen delen, do&rsquo;s &amp; don&rsquo;ts</div>
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>15:00&ndash;15:30 Terugkoppeling &amp; reflectie</div>
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>15:30&ndash;16:00 Borrel en napraten</div>
+            </div>
+
+            <div class="mt-6">
+              <a href="#aanmelden" data-interesse="High Potential Platform, Bijeenkomst 3 (17 september 2026)" class="bijeenkomst-cta inline-flex items-center gap-2 rounded-md bg-orange px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-orange/90">
+                Meld u aan voor deze bijeenkomst
+                <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- High Potential - Bijeenkomst 4 -->
+          <article id="bijeenkomst-hp-4" class="group relative overflow-hidden rounded-lg border border-hairline bg-white p-8 transition-colors hover:border-orange/40">
             <span class="absolute inset-y-0 left-0 w-0.5 bg-orange opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"></span>
             <div class="flex items-center gap-4">
               <span class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-navy/5 text-navy">
@@ -479,90 +891,94 @@
                 <div class="text-xs font-semibold uppercase tracking-[0.16em] text-orange">Bijeenkomst 4</div>
                 <div class="mt-1 flex items-center gap-1.5 text-sm text-slate-soft">
                   <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
-                  Donderdag 20 november 2025 &middot; 12:00&ndash;15:30
+                  Donderdag 12 november 2026 &middot; 12:00&ndash;15:30
                 </div>
               </div>
             </div>
 
             <h3 class="mt-6 font-display text-xl font-semibold text-navy-deep">
-              Het belang van professioneel intern opdrachtgeverschap tussen Asset Management, team Vastgoed en de ketenpartners
+              Ervaringen met KSW/RGS: organisatie-inrichting en de optimalisatie van de bouwopgave
             </h3>
-            <div class="mt-2 text-sm font-semibold text-navy">Mischa Coenen, Assetmanager, Vincio Wonen</div>
-            <p class="mt-4 max-w-3xl text-sm leading-relaxed text-slate-soft">
-              Om een goede opdrachtgever naar ketenpartners te kunnen zijn, is het van groot belang
-              binnen corporaties de verbinding te organiseren tussen de strategie van de corporatie,
-              de vertaalslag daarvan naar de vastgoedportefeuille en de juiste opdrachten vanuit
-              (technisch) assetmanagement naar team Vastgoed en daarmee naar de ketenpartners.
-              Functioneert die verbinding niet goed, dan halen opdrachtgevers veel minder waarde uit
-              de samenwerking met hun ketenpartners dan in een &ldquo;open&rdquo; ketensamenwerking
-              mogelijk is. Mischa neemt de deelnemers mee in de aanpak die hij heeft gevolgd om die
-              verbinding op strategisch, tactisch en operationeel niveau te maken, en hoe de
-              verbinding met ketenpartners daarbij wordt gelegd.
-            </p>
+            <div class="mt-2 text-sm font-semibold text-navy">Mark van Logten, Knaapen</div>
+            <div class="mt-4 max-w-3xl space-y-4 text-sm leading-relaxed text-slate-soft">
+              <p>
+                Bij langjarig samenwerken in RGS- of ketensamenwerkingsverbanden draait het in de kern
+                altijd om hetzelfde: het bouwen aan duurzame partnerships, waarin aannemers en
+                woningcorporaties door het optimaal benutten van het lerend vermogen in de keten samen
+                streven naar maximale efficiëntie en plezier in het samenwerken.
+              </p>
+              <p class="rounded-md border-l-2 border-orange bg-surface py-2.5 pl-4 text-ink/75">
+                Bij Knaapen is men in 2010 gestart met deze manier van werken; anno 2025 realiseert
+                men inmiddels 99% van de omzet via dit type samenwerkingen.
+              </p>
+              <p>
+                In dit college deelt Mark hoe je zo&rsquo;n samenwerking succesvol inricht, welke
+                veranderingen dit vraagt van organisatie en cultuur, en wat het oplevert voor zowel
+                opdrachtgever als opdrachtnemer.
+              </p>
+            </div>
 
             <div class="mt-6 grid gap-x-8 gap-y-2 border-t border-hairline pt-6 text-sm text-slate-soft sm:grid-cols-2">
               <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>12:00&ndash;13:00 Ontvangst &amp; lunch</div>
-              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>13:00&ndash;14:00 College door Mischa Coenen (Vincio)</div>
+              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>13:00&ndash;14:00 College door Mark van Logten (Knaapen)</div>
               <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>14:00&ndash;15:00 Tafeldiscussie: ervaringen delen, do&rsquo;s &amp; don&rsquo;ts</div>
               <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>15:00&ndash;15:30 Terugkoppeling &amp; reflectie</div>
               <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>15:30&ndash;16:00 Borrel en napraten</div>
             </div>
 
             <div class="mt-6">
-              <a href="#aanmelden" data-interesse="Bijeenkomst 4, 20 november 2025" class="bijeenkomst-cta inline-flex items-center gap-2 rounded-md bg-orange px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-orange/90">
+              <a href="#aanmelden" data-interesse="High Potential Platform, Bijeenkomst 4 (12 november 2026)" class="bijeenkomst-cta inline-flex items-center gap-2 rounded-md bg-orange px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-orange/90">
                 Meld u aan voor deze bijeenkomst
                 <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
               </a>
             </div>
           </article>
 
-          <!-- Bijeenkomst 5 (extra) -->
-          <article id="bijeenkomst-5" class="group relative overflow-hidden rounded-lg border border-orange/30 bg-surface p-8">
-            <span class="absolute inset-y-0 left-0 w-0.5 bg-orange" aria-hidden="true"></span>
-            <div class="flex flex-wrap items-center justify-between gap-3">
-              <div class="flex items-center gap-4">
-                <span class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-orange/10 text-orange">
-                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M18 6l-2.5 2.5M8.5 15.5 6 18"/></svg>
-                </span>
-                <div>
-                  <div class="text-xs font-semibold uppercase tracking-[0.16em] text-orange">Extra bijeenkomst 5</div>
-                  <div class="mt-1 flex items-center gap-1.5 text-sm text-slate-soft">
-                    <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
-                    Donderdag 22 januari 2026 &middot; 12:00&ndash;16:30
-                  </div>
-                </div>
+          <!-- High Potential - Locatie, zekerheden, deelname -->
+          <div class="grid gap-6 sm:grid-cols-2">
+            <div class="rounded-lg border border-hairline bg-white p-6">
+              <div class="flex items-center gap-2.5">
+                <svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.5 7-11a7 7 0 1 0-14 0c0 4.5 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                <h4 class="font-display text-base font-semibold text-navy-deep">Locatie</h4>
               </div>
-              <span class="rounded-full bg-orange/15 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-orange">Verlengde sessie</span>
+              <p class="mt-3 text-sm leading-relaxed text-slate-soft">
+                De platformbijeenkomsten vinden plaats op het terrein van Kasteel de Vanenburg,
+                Vanenburgerallee 13, 3882 RH te Putten. Ontvangst, lunch en diner vinden plaats in het
+                kasteel; de lezingen vinden plaats in de Oranjerie, direct naast het kasteel.
+              </p>
             </div>
 
-            <h3 class="mt-6 font-display text-xl font-semibold text-navy-deep">
-              Reflectie vanuit de consultancy en interim management praktijk op de wijze waarop corporaties en bouwpartijen ketensamenwerking implementeren
-            </h3>
-            <div class="mt-2 text-sm font-semibold text-navy">Marcel Noordhuis &amp; Eric van den Boogaard, Peilon</div>
-            <p class="mt-4 max-w-3xl text-sm leading-relaxed text-slate-soft">
-              Met vele tientallen jaren advieservaring in de bouw- en corporatiesector reflecteren
-              Marcel en Eric op de wijze waarop ketensamenwerking nu wordt geïmplementeerd en wat
-              naar hun mening de belangrijkste succes- en faalfactoren zijn. Marcel en Eric zetten u
-              aan het denken en gaan het gesprek met u aan, met als doel u nieuwe inzichten mee te
-              geven die u kunt gebruiken bij het (verder) inrichten van de ketensamenwerking binnen
-              en tussen uw organisaties.
-            </p>
-
-            <div class="mt-6 grid gap-x-8 gap-y-2 border-t border-hairline pt-6 text-sm text-slate-soft sm:grid-cols-2">
-              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>12:00&ndash;13:00 Ontvangst &amp; lunch</div>
-              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>13:00&ndash;14:30 College door Marcel &amp; Eric</div>
-              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>14:30&ndash;15:30 Tafeldiscussie: ervaringen delen, do&rsquo;s &amp; don&rsquo;ts</div>
-              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>15:30&ndash;16:00 Terugkoppeling &amp; reflectie</div>
-              <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>16:00&ndash;16:30 Borrel en napraten</div>
+            <div class="rounded-lg border border-hairline bg-white p-6">
+              <div class="flex items-center gap-2.5">
+                <svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 4 8.5 8 9.5 4-1 8-4.5 8-9.5V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+                <h4 class="font-display text-base font-semibold text-navy-deep">Zekerheden</h4>
+              </div>
+              <ul class="mt-3 space-y-2 text-sm leading-relaxed text-slate-soft">
+                <li class="flex gap-2"><span class="text-orange">&middot;</span>Alle lezingen zijn zowel live als via internet te volgen, zodat iedereen kan deelnemen.</li>
+                <li class="flex gap-2"><span class="text-orange">&middot;</span>Enkele dagen later staat de lezing in een afgeschermde Vimeo-omgeving, zodat u haar ook op een ander moment kunt terugkijken.</li>
+                <li class="flex gap-2"><span class="text-orange">&middot;</span>Bij de live bijeenkomst neemt u 1 introducé mee; volgt u via internet, dan kunnen maximaal 3 introducés meekijken.</li>
+                <li class="flex gap-2"><span class="text-orange">&middot;</span>Alle hand-outs en video-opnamen staan voor leden overzichtelijk in een eigen SharePoint-omgeving.</li>
+              </ul>
             </div>
+          </div>
 
-            <div class="mt-6">
-              <a href="#aanmelden" data-interesse="Extra bijeenkomst 5, 22 januari 2026" class="bijeenkomst-cta inline-flex items-center gap-2 rounded-md bg-orange px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-orange/90">
-                Meld u aan voor deze bijeenkomst
+          <div class="rounded-lg border border-navy/15 bg-navy p-6 text-white sm:p-8">
+            <div class="flex flex-wrap items-center justify-between gap-6">
+              <div>
+                <div class="text-xs font-semibold uppercase tracking-[0.16em] text-orange">Deelnemen</div>
+                <div class="mt-2 font-display text-2xl font-semibold">&euro;1.400 <span class="text-sm font-normal text-white/60">ex. btw per jaar</span></div>
+                <p class="mt-3 max-w-lg text-sm leading-relaxed text-white/75">
+                  Voor de 4 bijeenkomsten van het High Potential Platform, inclusief lunch, borrel en
+                  introducé (1 live en 3 digitaal). Stapt u later in, dan betaalt u naar rato van het
+                  aantal bijeenkomsten dat nog resteert in het lopende jaar.
+                </p>
+              </div>
+              <a href="#aanmelden" data-interesse="High Potential Platform, volledig jaarprogramma 2026" class="bijeenkomst-cta inline-flex shrink-0 items-center gap-2 rounded-md bg-orange px-5 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-orange/90">
+                Meld u aan voor het High Potential Platform
                 <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
               </a>
             </div>
-          </article>
+          </div>
 
         </div>
       </div>
@@ -669,12 +1085,12 @@
                   <label for="interesse" class="text-xs font-semibold uppercase tracking-[0.16em] text-navy-deep">Ik heb interesse in</label>
                   <select id="interesse" name="interesse" required class="mt-2 w-full rounded-md border border-hairline bg-white px-3.5 py-2.5 text-sm text-ink focus:border-navy focus:outline-none focus:ring-2 focus:ring-navy/15">
                     <option value="" disabled selected>Maak een keuze</option>
-                    <option>Het volledige jaarprogramma (alle bijeenkomsten)</option>
-                    <option>Bijeenkomst 1, 13 maart 2025</option>
-                    <option>Bijeenkomst 2, 15 mei 2025</option>
-                    <option>Bijeenkomst 3, 18 september 2025</option>
-                    <option>Bijeenkomst 4, 20 november 2025</option>
-                    <option>Extra bijeenkomst 5, 22 januari 2026</option>
+                    <option>Executive Platform, volledig jaarprogramma 2026</option>
+                    <option>Executive Platform, Bijeenkomst 3 (17 september 2026)</option>
+                    <option>Executive Platform, Bijeenkomst 4 (12 november 2026)</option>
+                    <option>High Potential Platform, volledig jaarprogramma 2026</option>
+                    <option>High Potential Platform, Bijeenkomst 3 (17 september 2026)</option>
+                    <option>High Potential Platform, Bijeenkomst 4 (12 november 2026)</option>
                     <option>Nog niet zeker, graag meer informatie</option>
                   </select>
                 </div>
@@ -731,17 +1147,15 @@
           <li><a href="#bijeenkomsten" class="text-white/65 hover:text-white">Bijeenkomsten</a></li>
           <li><a href="#doelgroep" class="text-white/65 hover:text-white">Voor wie</a></li>
           <li><a href="#aanmelden" class="text-white/65 hover:text-white">Aanmelden</a></li>
+          <li><a href="archief.html" class="text-white/65 hover:text-white">Archief</a></li>
         </ul>
       </div>
 
       <div>
-        <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-white">Bijeenkomsten</h3>
+        <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-white">Programma 2026</h3>
         <ul class="mt-5 space-y-3 text-sm">
-          <li><a href="#bijeenkomst-1" class="text-white/65 hover:text-white">1. 13 maart 2025</a></li>
-          <li><a href="#bijeenkomst-2" class="text-white/65 hover:text-white">2. 15 mei 2025</a></li>
-          <li><a href="#bijeenkomst-3" class="text-white/65 hover:text-white">3. 18 september 2025</a></li>
-          <li><a href="#bijeenkomst-4" class="text-white/65 hover:text-white">4. 20 november 2025</a></li>
-          <li><a href="#bijeenkomst-5" class="text-white/65 hover:text-white">Extra: 22 januari 2026</a></li>
+          <li><a href="#bijeenkomsten" class="text-white/65 hover:text-white">Executive Platform</a></li>
+          <li><a href="#bijeenkomsten" class="text-white/65 hover:text-white">High Potential Platform</a></li>
         </ul>
       </div>
 
@@ -781,6 +1195,55 @@
     document.getElementById("copyright-year").textContent =
       "© " + new Date().getFullYear() + " Platform Ketensamenwerking. Alle rechten voorbehouden.";
 
+    (function () {
+      const now = new Date();
+      const executiveDone = now > new Date("2026-11-12T20:30:00");
+      const hpDone = now > new Date("2026-11-12T15:30:00");
+
+      const badge = document.getElementById("hero-badge-text");
+      const heading = document.getElementById("hero-heading");
+      const intro = document.getElementById("hero-intro");
+
+      if (executiveDone && hpDone) {
+        badge.textContent = "Platform Ketensamenwerking · Binnenkort: jaarprogramma 2027";
+        heading.textContent = "Het jaarprogramma 2027 komt eraan.";
+        intro.textContent =
+          "Het jaarprogramma 2026 van het Executive Platform en het High Potential Platform zit erop. " +
+          "Meld u aan om als eerste te horen zodra het nieuwe programma voor 2027 bekend is.";
+      } else if (executiveDone || hpDone) {
+        const doorlopend = executiveDone ? "High Potential Platform" : "Executive Platform";
+        const afgerond = executiveDone ? "Executive Platform" : "High Potential Platform";
+        heading.textContent = "Eén programma dat uw blik op ketensamenwerking verscherpt.";
+        intro.textContent =
+          "Het " + afgerond + " heeft dit jaar zijn laatste bijeenkomst gehad. Het " + doorlopend +
+          " brengt in de resterende bijeenkomsten van 2026 wetenschappelijke verdieping samen met de " +
+          "praktijk van koplopers in het vak.";
+      }
+    })();
+
+    const archiefToggle = document.getElementById("archief-toggle");
+    const archiefMenu = document.getElementById("archief-menu");
+    if (archiefToggle && archiefMenu) {
+      archiefToggle.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const willOpen = archiefMenu.classList.contains("hidden");
+        archiefMenu.classList.toggle("hidden", !willOpen);
+        archiefToggle.setAttribute("aria-expanded", String(willOpen));
+      });
+      document.addEventListener("click", (e) => {
+        if (!archiefMenu.classList.contains("hidden") && !archiefMenu.contains(e.target) && e.target !== archiefToggle) {
+          archiefMenu.classList.add("hidden");
+          archiefToggle.setAttribute("aria-expanded", "false");
+        }
+      });
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          archiefMenu.classList.add("hidden");
+          archiefToggle.setAttribute("aria-expanded", "false");
+        }
+      });
+    }
+
     const menuToggle = document.getElementById("menu-toggle");
     const mobileMenu = document.getElementById("mobile-menu");
     const iconOpen = document.getElementById("menu-icon-open");
@@ -799,6 +1262,20 @@
         iconClose.classList.add("hidden");
       }),
     );
+
+    const bijeenkomstenTabs = document.querySelectorAll(".bijeenkomsten-tab");
+    bijeenkomstenTabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        bijeenkomstenTabs.forEach((t) => {
+          const active = t === tab;
+          t.setAttribute("aria-selected", String(active));
+          t.classList.toggle("bg-navy", active);
+          t.classList.toggle("text-white", active);
+          t.classList.toggle("text-slate-soft", !active);
+          document.getElementById("bijeenkomsten-panel-" + t.dataset.tab).classList.toggle("hidden", !active);
+        });
+      });
+    });
 
     const heroMoreToggle = document.getElementById("hero-more-toggle");
     const heroMoreWrap = document.getElementById("hero-more-wrap");

@@ -1,0 +1,460 @@
+<title>Platform Ketensamenwerking, archief</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Overzicht van eerdere jaarprogramma's van Platform Ketensamenwerking: welke bijeenkomsten en sprekers er in voorgaande jaren waren." />
+<meta property="og:title" content="Platform Ketensamenwerking, archief" />
+<meta property="og:description" content="Overzicht van eerdere jaarprogramma's van Platform Ketensamenwerking." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23142b52'/%3E%3Ccircle cx='16' cy='16' r='7' fill='none' stroke='%23e17a2d' stroke-width='2.5'/%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          navy: "oklch(0.24 0.06 256)",
+          "navy-deep": "oklch(0.18 0.05 256)",
+          "navy-soft": "oklch(0.34 0.06 256)",
+          orange: "oklch(0.68 0.17 48)",
+          "orange-soft": "oklch(0.82 0.1 60)",
+          surface: "oklch(0.98 0.005 250)",
+          "surface-2": "oklch(0.95 0.008 250)",
+          ink: "oklch(0.18 0.02 256)",
+          "slate-soft": "oklch(0.5 0.02 256)",
+          hairline: "oklch(0.9 0.008 256)",
+        },
+        fontFamily: {
+          display: ['"Inter Tight"', "ui-sans-serif", "system-ui", "sans-serif"],
+          sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+        },
+      },
+    },
+  };
+</script>
+
+<style>
+  html { scroll-behavior: smooth; }
+  body {
+    font-feature-settings: "ss01", "cv11";
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4 {
+    font-family: "Inter Tight", ui-sans-serif, system-ui, sans-serif;
+    letter-spacing: -0.02em;
+    color: oklch(0.18 0.05 256);
+  }
+
+  .container-x {
+    width: 100%;
+    margin-inline: auto;
+    max-width: 1200px;
+    padding-inline: 1.25rem;
+  }
+  @media (min-width: 768px) {
+    .container-x { padding-inline: 2rem; }
+  }
+
+  .section-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.625rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: oklch(0.68 0.17 48);
+  }
+
+  .heading-rule { position: relative; padding-bottom: 0.875rem; }
+  .heading-rule::after {
+    content: "";
+    position: absolute;
+    left: 0; bottom: 0;
+    width: 2.5rem; height: 2px;
+    background: oklch(0.68 0.17 48);
+  }
+
+  .icon { width: 1.25rem; height: 1.25rem; }
+</style>
+
+<body class="flex min-h-screen flex-col bg-white font-sans text-ink">
+
+  <!-- TopBar -->
+  <div class="hidden bg-navy-deep text-white md:block">
+    <div class="container-x flex h-9 items-center justify-between text-xs">
+      <span class="tracking-wide">Platform Ketensamenwerking &middot; Kennissessies voor executives en high potentials</span>
+      <a href="mailto:info@ketenmanagement.com" class="inline-flex items-center gap-1.5">
+        <svg class="icon h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+        info@ketenmanagement.com
+      </a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 border-b border-hairline bg-white/90 backdrop-blur">
+    <div class="flex h-20 w-full items-center justify-between gap-4 px-5 md:h-24 md:px-8">
+      <a href="index.html" class="shrink-0 font-display text-lg font-semibold leading-tight md:text-xl">
+        <span style="color:oklch(0.68 0.17 48)">Platform</span>
+        <span class="text-navy-deep">Ketensamenwerking</span>
+      </a>
+
+      <nav class="hidden lg:flex" aria-label="Hoofdnavigatie">
+        <ul class="flex items-center gap-6">
+          <li><a href="index.html#programma" class="text-sm font-medium text-ink/80 transition-colors hover:text-navy">Programma</a></li>
+          <li><a href="index.html#bijeenkomsten" class="text-sm font-medium text-ink/80 transition-colors hover:text-navy">Bijeenkomsten</a></li>
+          <li><a href="index.html#doelgroep" class="text-sm font-medium text-ink/80 transition-colors hover:text-navy">Voor wie</a></li>
+          <li class="relative">
+            <button
+              type="button"
+              id="archief-toggle"
+              class="inline-flex items-center gap-1 text-sm font-semibold text-navy"
+              aria-expanded="false"
+              aria-controls="archief-menu"
+            >
+              Archief
+              <svg class="icon h-3.5 w-3.5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div id="archief-menu" class="absolute left-0 top-full z-20 mt-2 hidden w-36 rounded-md border border-hairline bg-white py-2 shadow-lg">
+              <a href="archief.html#jaar-2025" class="block px-4 py-2 text-sm text-navy hover:bg-surface">2025</a>
+            </div>
+          </li>
+          <li>
+            <a href="index.html#aanmelden" class="inline-flex items-center gap-2 rounded-md bg-orange px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-orange/90">
+              Meld u aan
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <button type="button" id="menu-toggle" aria-label="Menu openen" aria-expanded="false" class="inline-flex h-10 w-10 items-center justify-center rounded-md border border-hairline text-navy lg:hidden">
+        <svg id="menu-icon-open" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg id="menu-icon-close" class="icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden border-t border-hairline lg:hidden">
+      <nav class="container-x py-4" aria-label="Mobiele navigatie">
+        <ul class="flex flex-col">
+          <li><a href="index.html#programma" class="block border-b border-hairline py-3 text-sm font-medium text-ink/80">Programma</a></li>
+          <li><a href="index.html#bijeenkomsten" class="block border-b border-hairline py-3 text-sm font-medium text-ink/80">Bijeenkomsten</a></li>
+          <li><a href="index.html#doelgroep" class="block border-b border-hairline py-3 text-sm font-medium text-ink/80">Voor wie</a></li>
+          <li class="border-b border-hairline py-3 text-sm font-semibold text-navy">Archief</li>
+          <li><a href="archief.html#jaar-2025" class="block border-b border-hairline py-3 pl-4 text-sm text-ink/70">2025</a></li>
+        </ul>
+        <div class="mt-4">
+          <a href="index.html#aanmelden" class="inline-flex w-full items-center justify-center gap-2 rounded-md bg-orange px-4 py-3 text-sm font-semibold text-white">Meld u aan</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-1">
+
+    <!-- Intro -->
+    <section class="border-b border-hairline bg-surface">
+      <div class="container-x py-16 md:py-20">
+        <div class="section-label"><span>Archief</span></div>
+        <h1 class="heading-rule mt-5 font-display text-3xl font-semibold md:text-4xl">Programma-archief</h1>
+        <p class="mt-6 max-w-2xl text-base leading-relaxed text-slate-soft">
+          Een overzicht van eerdere edities van het jaarprogramma van Platform Ketensamenwerking:
+          welke thema&rsquo;s, sprekers en bijeenkomsten er in voorgaande jaren waren. Op zoek naar
+          het actuele programma?
+          <a href="index.html#bijeenkomsten" class="font-semibold text-navy underline decoration-orange decoration-2 underline-offset-4 hover:text-navy-deep">Bekijk het jaarprogramma 2026</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- Jaar 2025 -->
+    <section id="jaar-2025" class="border-b border-hairline bg-white scroll-mt-20">
+      <div class="container-x py-16 md:py-20">
+        <div class="flex flex-wrap items-baseline justify-between gap-3">
+          <h2 class="font-display text-2xl font-semibold text-navy-deep md:text-3xl">Jaarprogramma 2025</h2>
+          <span class="rounded-full bg-hairline px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-slate-soft">Afgerond</span>
+        </div>
+        <p class="mt-4 max-w-2xl text-sm leading-relaxed text-slate-soft">
+          Het High Potential Programma 2025 bestond uit vier bijeenkomsten en een extra vijfde
+          sessie, telkens op donderdagmiddag.
+        </p>
+
+        <div class="mt-10 space-y-6">
+
+          <!-- 2025 - Bijeenkomst 1 -->
+          <article class="relative overflow-hidden rounded-lg border border-hairline bg-surface p-8">
+            <div class="flex items-center gap-4">
+              <span class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-navy/5 text-navy">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>
+              </span>
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="text-xs font-semibold uppercase tracking-[0.16em] text-orange">Bijeenkomst 1</span>
+                  <span class="rounded-full bg-hairline px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-slate-soft">Geweest</span>
+                </div>
+                <div class="mt-1 flex items-center gap-1.5 text-sm text-slate-soft">
+                  <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+                  Donderdag 13 maart 2025 &middot; 12:00&ndash;15:30
+                </div>
+              </div>
+            </div>
+
+            <h3 class="mt-6 font-display text-xl font-semibold text-navy-deep">
+              Datagedreven samenwerken en regisseren met impact
+            </h3>
+            <div class="mt-2 text-sm font-semibold text-navy">prof.dr. John Goedee, Tilburg University</div>
+            <p class="mt-4 max-w-3xl text-sm leading-relaxed text-slate-soft">
+              Samenwerken, regisseren en data science zijn belangrijke onderwerpen. John Goedee
+              bood een handvat voor wie verantwoordelijk is of wordt voor een complex datagedreven
+              samenwerkingstraject, en liet zien welke rol vakkennis, intuïtie en data daarin
+              spelen. De deelnemers kwamen tot de conclusie dat samenwerken een vak is dat niet
+              onderschat mag worden, en dat intuïtie belangrijk blijft voor professionals, maar dat
+              data in belangrijke mate bijdraagt aan effectieve besluitvorming.
+            </p>
+          </article>
+
+          <!-- 2025 - Bijeenkomst 2 -->
+          <article class="relative overflow-hidden rounded-lg border border-hairline bg-surface p-8">
+            <div class="flex items-center gap-4">
+              <span class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-navy/5 text-navy">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6.5 6.5-6.5s6.5 2.9 6.5 6.5"/><circle cx="17.5" cy="9.5" r="2.75"/><path d="M15.8 13.6c2.6.4 4.7 2.7 4.7 5.9"/></svg>
+              </span>
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="text-xs font-semibold uppercase tracking-[0.16em] text-orange">Bijeenkomst 2</span>
+                  <span class="rounded-full bg-hairline px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-slate-soft">Geweest</span>
+                </div>
+                <div class="mt-1 flex items-center gap-1.5 text-sm text-slate-soft">
+                  <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+                  Donderdag 15 mei 2025 &middot; 12:00&ndash;15:30
+                </div>
+              </div>
+            </div>
+
+            <h3 class="mt-6 font-display text-xl font-semibold text-navy-deep">
+              Hoe houd je mensen bij complexe samenwerkingsverbanden wendbaar en krachtig?
+            </h3>
+            <div class="mt-2 text-sm font-semibold text-navy">Marion Muller, ViSa</div>
+            <p class="mt-4 max-w-3xl text-sm leading-relaxed text-slate-soft">
+              Marion heeft zich gespecialiseerd in het onderzoeken en ontwikkelen van de
+              &lsquo;zachte kant&rsquo; van samenwerken bij organisaties. Vanuit haar
+              praktijkervaring hield ze de deelnemers een spiegel voor, kijkend naar hun eigen
+              samenwerkingsverbanden, en gaf ze handvatten om te kunnen verbeteren. In dit college
+              nam Marion de deelnemers mee in hoe je (keten)samenwerkingsverbanden wendbaar en
+              krachtig maakt, wat de do&rsquo;s en dont&rsquo;s zijn en wat het kan opleveren.
+            </p>
+          </article>
+
+          <!-- 2025 - Bijeenkomst 3 -->
+          <article class="relative overflow-hidden rounded-lg border border-hairline bg-surface p-8">
+            <div class="flex items-center gap-4">
+              <span class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-navy/5 text-navy">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4c0 9-6 15-15 15H4v-1C4 10 10 4 19 4h1Z"/><path d="M9 15c3-3 6-6 10-10"/></svg>
+              </span>
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="text-xs font-semibold uppercase tracking-[0.16em] text-orange">Bijeenkomst 3</span>
+                  <span class="rounded-full bg-hairline px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-slate-soft">Geweest</span>
+                </div>
+                <div class="mt-1 flex items-center gap-1.5 text-sm text-slate-soft">
+                  <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+                  Donderdag 18 september 2025 &middot; 12:00&ndash;15:30
+                </div>
+              </div>
+            </div>
+
+            <h3 class="mt-6 font-display text-xl font-semibold text-navy-deep">
+              Hoe geef je duurzaamheid vorm in de praktijk en neem je alle niveaus mee in je organisatie?
+            </h3>
+            <div class="mt-2 text-sm font-semibold text-navy">Luc Reusken, Van der Meijs</div>
+            <p class="mt-4 max-w-3xl text-sm leading-relaxed text-slate-soft">
+              Veel partijen in de corporatie-, bouw- en vastgoedketen hebben duurzaamheid hoog in
+              het vaandel staan. De grote uitdaging is echter om die ambitie te vertalen naar de
+              opgave die gerealiseerd moet worden, met impact op strategisch, tactisch en
+              operationeel niveau, binnen organisaties én binnen de keten. Luc nam de deelnemers
+              mee in de (on)mogelijkheden van de implementatie van duurzaamheidsbeleid binnen
+              individuele organisaties én in de keten.
+            </p>
+          </article>
+
+          <!-- 2025 - Bijeenkomst 4 -->
+          <article class="relative overflow-hidden rounded-lg border border-hairline bg-surface p-8">
+            <div class="flex items-center gap-4">
+              <span class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-navy/5 text-navy">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m15 9-2 6-6 2 2-6 6-2Z"/></svg>
+              </span>
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="text-xs font-semibold uppercase tracking-[0.16em] text-orange">Bijeenkomst 4</span>
+                  <span class="rounded-full bg-hairline px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-slate-soft">Geweest</span>
+                </div>
+                <div class="mt-1 flex items-center gap-1.5 text-sm text-slate-soft">
+                  <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+                  Donderdag 20 november 2025 &middot; 12:00&ndash;15:30
+                </div>
+              </div>
+            </div>
+
+            <h3 class="mt-6 font-display text-xl font-semibold text-navy-deep">
+              Het belang van professioneel intern opdrachtgeverschap tussen Asset Management, team Vastgoed en de ketenpartners
+            </h3>
+            <div class="mt-2 text-sm font-semibold text-navy">Mischa Coenen, Assetmanager, Vincio Wonen</div>
+            <p class="mt-4 max-w-3xl text-sm leading-relaxed text-slate-soft">
+              Om een goede opdrachtgever naar ketenpartners te kunnen zijn, is het van groot belang
+              binnen corporaties de verbinding te organiseren tussen de strategie van de corporatie,
+              de vertaalslag daarvan naar de vastgoedportefeuille en de juiste opdrachten vanuit
+              (technisch) assetmanagement naar team Vastgoed en daarmee naar de ketenpartners.
+              Mischa nam de deelnemers mee in de aanpak die hij heeft gevolgd om die verbinding op
+              strategisch, tactisch en operationeel niveau te maken, en hoe de verbinding met
+              ketenpartners daarbij werd gelegd.
+            </p>
+          </article>
+
+          <!-- 2025 - Extra bijeenkomst 5 -->
+          <article class="relative overflow-hidden rounded-lg border border-hairline bg-surface p-8">
+            <div class="flex flex-wrap items-center justify-between gap-3">
+              <div class="flex items-center gap-4">
+                <span class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-orange/10 text-orange">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M18 6l-2.5 2.5M8.5 15.5 6 18"/></svg>
+                </span>
+                <div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-xs font-semibold uppercase tracking-[0.16em] text-orange">Extra bijeenkomst 5</span>
+                    <span class="rounded-full bg-hairline px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-slate-soft">Geweest</span>
+                  </div>
+                  <div class="mt-1 flex items-center gap-1.5 text-sm text-slate-soft">
+                    <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+                    Donderdag 22 januari 2026 &middot; 12:00&ndash;16:30
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="mt-6 font-display text-xl font-semibold text-navy-deep">
+              Reflectie vanuit de consultancy en interim management praktijk op de wijze waarop corporaties en bouwpartijen ketensamenwerking implementeren
+            </h3>
+            <div class="mt-2 text-sm font-semibold text-navy">Marcel Noordhuis &amp; Eric van den Boogaard, Peilon</div>
+            <p class="mt-4 max-w-3xl text-sm leading-relaxed text-slate-soft">
+              Met vele tientallen jaren advieservaring in de bouw- en corporatiesector reflecteerden
+              Marcel en Eric op de wijze waarop ketensamenwerking wordt geïmplementeerd en wat naar
+              hun mening de belangrijkste succes- en faalfactoren zijn, om de deelnemers nieuwe
+              inzichten mee te geven voor het (verder) inrichten van de ketensamenwerking binnen en
+              tussen hun organisaties.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-0 bg-navy-deep text-white/80">
+    <div class="container-x grid gap-12 py-16 md:grid-cols-4">
+      <div>
+        <div class="font-display text-lg font-semibold text-white">Platform Ketensamenwerking</div>
+        <div class="text-[11px] uppercase tracking-[0.18em] text-white/50">High Potential Programma</div>
+        <p class="mt-5 max-w-xs text-sm leading-relaxed text-white/65">
+          Kennissessies voor executives en high potentials rondom ketensamenwerking binnen en
+          tussen organisaties in de corporatie-, bouw- en installatiesector. Een initiatief van
+          Ketenmanagement Interim &amp; Advies.
+        </p>
+        <a href="https://www.linkedin.com/in/marcelnoordhuis/" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex items-center gap-2 text-sm text-white/80 hover:text-white">
+          <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2 3.76-2 4 0 4.74 2.6 4.74 6V21h-4v-5.3c0-1.27-.02-2.9-1.77-2.9-1.77 0-2.04 1.38-2.04 2.8V21H9z"/></svg>
+          Volg ons op LinkedIn
+        </a>
+      </div>
+
+      <div>
+        <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-white">Programma</h3>
+        <ul class="mt-5 space-y-3 text-sm">
+          <li><a href="index.html#programma" class="text-white/65 hover:text-white">Over het platform</a></li>
+          <li><a href="index.html#bijeenkomsten" class="text-white/65 hover:text-white">Bijeenkomsten</a></li>
+          <li><a href="index.html#doelgroep" class="text-white/65 hover:text-white">Voor wie</a></li>
+          <li><a href="index.html#aanmelden" class="text-white/65 hover:text-white">Aanmelden</a></li>
+          <li><a href="archief.html" class="text-white/65 hover:text-white">Archief</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-white">Contact</h3>
+        <ul class="mt-5 space-y-3 text-sm text-white/65">
+          <li class="text-white">dr.ing. Marcel Noordhuis</li>
+          <li>
+            <a href="mailto:info@ketenmanagement.com" class="inline-flex items-center gap-2 hover:text-white">
+              <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+              info@ketenmanagement.com
+            </a>
+          </li>
+          <li>
+            <a href="tel:0614460880" class="inline-flex items-center gap-2 hover:text-white">
+              <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-2.5 1.5a12 12 0 0 0 6 6L15 14l5 2v4a2 2 0 0 1-2 2C9.6 22 2 14.4 2 6a2 2 0 0 1 2-2Z"/></svg>
+              06 - 144 60 880
+            </a>
+          </li>
+          <li>
+            <a href="https://www.ketenmanagement.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 hover:text-white">
+              ketenmanagement.com
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10">
+      <div class="container-x flex flex-col items-start justify-between gap-3 py-6 text-xs text-white/50 md:flex-row md:items-center">
+        <span id="copyright-year">&copy; 2026 Platform Ketensamenwerking. Alle rechten voorbehouden.</span>
+        <span>Onderdeel van Ketenmanagement Interim &amp; Advies</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("copyright-year").textContent =
+      "© " + new Date().getFullYear() + " Platform Ketensamenwerking. Alle rechten voorbehouden.";
+
+    const archiefToggle = document.getElementById("archief-toggle");
+    const archiefMenu = document.getElementById("archief-menu");
+    if (archiefToggle && archiefMenu) {
+      archiefToggle.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const willOpen = archiefMenu.classList.contains("hidden");
+        archiefMenu.classList.toggle("hidden", !willOpen);
+        archiefToggle.setAttribute("aria-expanded", String(willOpen));
+      });
+      document.addEventListener("click", (e) => {
+        if (!archiefMenu.classList.contains("hidden") && !archiefMenu.contains(e.target) && e.target !== archiefToggle) {
+          archiefMenu.classList.add("hidden");
+          archiefToggle.setAttribute("aria-expanded", "false");
+        }
+      });
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          archiefMenu.classList.add("hidden");
+          archiefToggle.setAttribute("aria-expanded", "false");
+        }
+      });
+    }
+
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const iconOpen = document.getElementById("menu-icon-open");
+    const iconClose = document.getElementById("menu-icon-close");
+    menuToggle.addEventListener("click", () => {
+      const isOpen = !mobileMenu.classList.contains("hidden");
+      mobileMenu.classList.toggle("hidden");
+      iconOpen.classList.toggle("hidden");
+      iconClose.classList.toggle("hidden");
+      menuToggle.setAttribute("aria-expanded", String(!isOpen));
+    });
+    mobileMenu.querySelectorAll("a").forEach((a) =>
+      a.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+        iconOpen.classList.remove("hidden");
+        iconClose.classList.add("hidden");
+      }),
+    );
+  </script>
+</body>
