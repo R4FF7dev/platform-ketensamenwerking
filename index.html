@@ -114,8 +114,16 @@
     animation: shine-rotate 3.5s linear infinite;
   }
 
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  .animate-marquee { animation: marquee 110s linear infinite; }
+  .animate-marquee-reverse { animation: marquee 110s linear infinite reverse; }
+  .marquee-track:hover { animation-play-state: paused; }
+
   @media (prefers-reduced-motion: reduce) {
-    .blueprint-drift, .ambient-glow-orange, .ambient-glow-navy, .shine-border-orange { animation: none; }
+    .blueprint-drift, .ambient-glow-orange, .ambient-glow-navy, .shine-border-orange, .animate-marquee, .animate-marquee-reverse { animation: none; }
   }
 
   .icon { width: 1.25rem; height: 1.25rem; }
@@ -135,11 +143,10 @@
   </div>
 
   <!-- Header -->
-  <header class="sticky top-0 z-50 border-b border-hairline bg-white/90 backdrop-blur">
+  <header class="sticky top-0 z-50 border-b border-hairline bg-white">
     <div class="flex h-20 w-full items-center justify-between gap-4 px-5 md:h-24 md:px-8">
-      <a href="#hero" class="shrink-0 font-display text-lg font-semibold leading-tight md:text-xl">
-        <span style="color:oklch(0.68 0.17 48)">Platform</span>
-        <span class="text-navy-deep">Ketensamenwerking</span>
+      <a href="#hero" class="shrink-0">
+        <img src="assets/unnamed.jpg" alt="Platform Ketensamenwerking" class="h-14 w-auto md:h-20" />
       </a>
 
       <nav class="hidden lg:flex" aria-label="Hoofdnavigatie">
@@ -358,6 +365,75 @@
                   excellente ketenspeler.
                 </p>
               </div>
+              <div class="mt-auto border-t border-hairline pt-6">
+                <div class="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-soft/70">Deelnemende organisaties</div>
+                <div class="mt-3 space-y-4">
+                  <div class="relative overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
+                    <div class="marquee-track animate-marquee flex w-max items-center gap-8">
+                    <img src="assets/Executive%20platform/0044-001_Carefos-Logo_RGB-e1617459879901.png" alt="Carefos" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/119A14DE-8C8D-43F3-A382-20349FC20126.png" alt="Talen" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/1211C98C-4EED-4B19-BE7A-A7238DB7765E.png" alt="Van Wijnen" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/20140FEC-D2C7-4151-BD4B-2B164AA45405.png" alt="Weijmens Totaal Onderhoud" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/32A74FED-028B-4DD6-8833-3CFA18753D31.jpg" alt="Partnerorganisatie" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/622FF772-C4F6-4A9D-8E62-D4A33B2D6429.png" alt="Lenferink Vastgoedonderhoud" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/746442AA-8553-4356-BA09-6A6D132B2074.png" alt="Hemink" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/7565A0E1-D08E-4D0A-8BAA-AF4D9D33DED6.png" alt="Huybregts Relou Bouw" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/AE28B365-61B4-4252-91E0-ACD5B0382C62.png" alt="Breman" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/C40BB2D2-0C0C-47B2-B1C1-A99F240D3AD6.png" alt="Rutges" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/CB22ECF6-459C-477C-B89F-6B8BA59A1327.png" alt="Lichtenberg" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/De-Alliantie-600x400-600x321-1-300x161.png" alt="de Alliantie" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/EF7208F3-BF38-406E-B6DB-2F681CA5375B.png" alt="Trivire" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/Elk-groep-grey-1.webp" alt="Elk Groep" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/0044-001_Carefos-Logo_RGB-e1617459879901.png" alt="Carefos" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/119A14DE-8C8D-43F3-A382-20349FC20126.png" alt="Talen" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/1211C98C-4EED-4B19-BE7A-A7238DB7765E.png" alt="Van Wijnen" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/20140FEC-D2C7-4151-BD4B-2B164AA45405.png" alt="Weijmens Totaal Onderhoud" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/32A74FED-028B-4DD6-8833-3CFA18753D31.jpg" alt="Partnerorganisatie" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/622FF772-C4F6-4A9D-8E62-D4A33B2D6429.png" alt="Lenferink Vastgoedonderhoud" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/746442AA-8553-4356-BA09-6A6D132B2074.png" alt="Hemink" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/7565A0E1-D08E-4D0A-8BAA-AF4D9D33DED6.png" alt="Huybregts Relou Bouw" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/AE28B365-61B4-4252-91E0-ACD5B0382C62.png" alt="Breman" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/C40BB2D2-0C0C-47B2-B1C1-A99F240D3AD6.png" alt="Rutges" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/CB22ECF6-459C-477C-B89F-6B8BA59A1327.png" alt="Lichtenberg" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/De-Alliantie-600x400-600x321-1-300x161.png" alt="de Alliantie" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/EF7208F3-BF38-406E-B6DB-2F681CA5375B.png" alt="Trivire" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/Elk-groep-grey-1.webp" alt="Elk Groep" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    </div>
+                  </div>
+                  <div class="relative overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
+                    <div class="marquee-track animate-marquee-reverse flex w-max items-center gap-8">
+                    <img src="assets/Executive%20platform/F4EBD305-7E39-447C-9932-4B34F6FAF7D1.jpg" alt="Vivare" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/Heijmanslogo.png" alt="Heijmans" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/Logo%2BHegeman%2B40%2Bjaar-453w%20copy.png" alt="Hegeman Bouw Partners" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/Logos_website_vanDiemen_9.png%20copy.png" alt="Portaal" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/download.png" alt="Rochdale" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/ew-logo.svg" alt="EW" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/hemubo_logo.png" alt="Hemubo" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/icon.webp" alt="Bouwers van morgen" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/images.png" alt="OnderhoudPlus" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/logo%20copy%202.svg" alt="Partnerorganisatie" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/logo%20copy.svg" alt="Partnerorganisatie" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/logo-geluk.svg" alt="Geluk" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/logo.svg" alt="Partnerorganisatie" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/nefit-bosch-logo.svg" alt="Nefit-Bosch" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/F4EBD305-7E39-447C-9932-4B34F6FAF7D1.jpg" alt="Vivare" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/Heijmanslogo.png" alt="Heijmans" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/Logo%2BHegeman%2B40%2Bjaar-453w%20copy.png" alt="Hegeman Bouw Partners" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/Logos_website_vanDiemen_9.png%20copy.png" alt="Portaal" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/download.png" alt="Rochdale" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/ew-logo.svg" alt="EW" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/hemubo_logo.png" alt="Hemubo" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/icon.webp" alt="Bouwers van morgen" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/images.png" alt="OnderhoudPlus" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/logo%20copy%202.svg" alt="Partnerorganisatie" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/logo%20copy.svg" alt="Partnerorganisatie" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/logo-geluk.svg" alt="Geluk" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/logo.svg" alt="Partnerorganisatie" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/Executive%20platform/nefit-bosch-logo.svg" alt="Nefit-Bosch" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div class="flex flex-col rounded-lg border border-hairline bg-white p-6 shadow-sm sm:p-8">
@@ -388,6 +464,73 @@
                   organisatie de slag te maken naar een excellente ketenspeler, en om de externe
                   keten zo optimaal mogelijk te laten functioneren.
                 </p>
+              </div>
+              <div class="mt-auto border-t border-hairline pt-6">
+                <div class="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-soft/70">Deelnemende organisaties</div>
+                <div class="mt-3 space-y-4">
+                  <div class="relative overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
+                    <div class="marquee-track animate-marquee flex w-max items-center gap-8">
+                    <img src="assets/High%20potential%20platform/0044-001_Carefos-Logo_RGB-e1617459879901.png" alt="Carefos" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/1211C98C-4EED-4B19-BE7A-A7238DB7765E.png" alt="Van Wijnen" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/download.png" alt="Rochdale" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/logo-1.png" alt="DudokWonen" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/33A5DF9C-F497-4693-A172-C114666A18A9.png" alt="Vivare" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/De-Alliantie-600x400-600x321-1-300x161.png" alt="de Alliantie" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/EF7208F3-BF38-406E-B6DB-2F681CA5375B.png" alt="Trivire" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/Elk-groep-grey-1.webp" alt="Elk Groep" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/Kwakkenbos-bv_logo-wit.png" alt="Kwakkenbos" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/Logo+Hegeman+40+jaar-453w.webp" alt="Hegeman Bouw Partners" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/Logo-Fraanje.svg" alt="Fraanje" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/coenhagedoorn_logo.svg" alt="Coen Hagedoorn" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/eb0f717f485a29b00022724e33cba7952ad47ee0.png" alt="Heembouw" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/0044-001_Carefos-Logo_RGB-e1617459879901.png" alt="Carefos" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/1211C98C-4EED-4B19-BE7A-A7238DB7765E.png" alt="Van Wijnen" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/download.png" alt="Rochdale" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/logo-1.png" alt="DudokWonen" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/33A5DF9C-F497-4693-A172-C114666A18A9.png" alt="Vivare" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/De-Alliantie-600x400-600x321-1-300x161.png" alt="de Alliantie" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/EF7208F3-BF38-406E-B6DB-2F681CA5375B.png" alt="Trivire" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/Elk-groep-grey-1.webp" alt="Elk Groep" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/Kwakkenbos-bv_logo-wit.png" alt="Kwakkenbos" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/Logo+Hegeman+40+jaar-453w.webp" alt="Hegeman Bouw Partners" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/Logo-Fraanje.svg" alt="Fraanje" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/coenhagedoorn_logo.svg" alt="Coen Hagedoorn" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/eb0f717f485a29b00022724e33cba7952ad47ee0.png" alt="Heembouw" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    </div>
+                  </div>
+                  <div class="relative overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
+                    <div class="marquee-track animate-marquee-reverse flex w-max items-center gap-8">
+                    <img src="assets/High%20potential%20platform/ew-logo.svg" alt="EW" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <span class="flex h-10 shrink-0 items-center rounded bg-navy px-3">
+                      <img src="assets/High%20potential%20platform/finalist-logo-white.svg" alt="Finalist" loading="lazy" class="h-5 w-auto object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    </span>
+                    <img src="assets/High%20potential%20platform/hemubo_logo.png" alt="Hemubo" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/images.jpg" alt="Woonzorg Nederland" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/logo-1.svg" alt="Partnerorganisatie" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/logo-2.svg" alt="Partnerorganisatie" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/logo-feenstra-vertical.svg" alt="Feenstra" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/logo.png" alt="Van Rijswijck" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/logo.svg" alt="Partnerorganisatie" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/nefit-bosch-logo.svg" alt="Nefit-Bosch" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/salverda-300x300.png" alt="Salverda Bouw" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/thus_logo.png" alt="Thús Wonen" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/ew-logo.svg" alt="EW" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <span class="flex h-10 shrink-0 items-center rounded bg-navy px-3">
+                      <img src="assets/High%20potential%20platform/finalist-logo-white.svg" alt="Finalist" loading="lazy" class="h-5 w-auto object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    </span>
+                    <img src="assets/High%20potential%20platform/hemubo_logo.png" alt="Hemubo" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/images.jpg" alt="Woonzorg Nederland" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/logo-1.svg" alt="Partnerorganisatie" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/logo-2.svg" alt="Partnerorganisatie" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/logo-feenstra-vertical.svg" alt="Feenstra" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/logo.png" alt="Van Rijswijck" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/logo.svg" alt="Partnerorganisatie" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/nefit-bosch-logo.svg" alt="Nefit-Bosch" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/salverda-300x300.png" alt="Salverda Bouw" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    <img src="assets/High%20potential%20platform/thus_logo.png" alt="Thús Wonen" loading="lazy" class="h-10 w-auto shrink-0 object-contain opacity-70 transition duration-300 hover:opacity-100" />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
