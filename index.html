@@ -42,6 +42,7 @@
   body {
     font-feature-settings: "ss01", "cv11";
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
   }
   h1, h2, h3, h4 {
     font-family: "Inter Tight", ui-sans-serif, system-ui, sans-serif;
@@ -135,9 +136,9 @@
   <div class="hidden bg-navy-deep text-white md:block">
     <div class="container-x flex h-9 items-center justify-between text-xs">
       <span class="tracking-wide">Platform Ketensamenwerking &middot; Kennissessies voor executives en high potentials</span>
-      <a href="mailto:info@ketenmanagement.com" class="inline-flex items-center gap-1.5">
+      <a href="mailto:m.noordhuis@platform-ketensamenwerking.nl" class="inline-flex items-center gap-1.5 whitespace-nowrap">
         <svg class="icon h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
-        info@ketenmanagement.com
+        m.noordhuis@platform-ketensamenwerking.nl
       </a>
     </div>
   </div>
@@ -146,7 +147,7 @@
   <header class="sticky top-0 z-50 border-b border-hairline bg-white">
     <div class="flex h-20 w-full items-center justify-between gap-4 px-5 md:h-24 md:px-8">
       <a href="#hero" class="shrink-0">
-        <img src="assets/unnamed.jpg" alt="Platform Ketensamenwerking" class="h-14 w-auto md:h-20" />
+        <img src="assets/logo.png" alt="Platform Ketensamenwerking" class="h-14 w-auto md:h-20" />
       </a>
 
       <nav class="hidden lg:flex" aria-label="Hoofdnavigatie">
@@ -337,15 +338,15 @@
           </div>
 
           <div class="mx-auto mt-10 grid max-w-5xl gap-6 sm:grid-cols-2">
-            <div class="flex flex-col rounded-lg border border-hairline bg-white p-6 shadow-sm sm:p-8">
+            <div class="flex min-w-0 flex-col rounded-lg border border-hairline bg-white p-6 shadow-sm sm:p-8">
               <div class="flex items-start gap-4">
                 <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-navy/5 text-navy">
                   <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16a1 1 0 0 1 1 1v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a1 1 0 0 1 1-1Z"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M2 13h20"/></svg>
                 </span>
                 <div>
                   <h4 class="font-display text-lg font-semibold text-navy-deep">Executive Platform Ketensamenwerking</h4>
-                  <div class="mt-1.5 inline-flex items-center rounded-full bg-orange/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-orange">
-                    Directeuren &amp; bestuurders &middot; bouw &amp; vastgoed
+                  <div class="-ml-3 mt-1.5 inline-flex items-center rounded-full bg-orange/10 px-3 py-1 text-left text-[11px] font-semibold uppercase tracking-wide text-orange">
+                    Directeuren &amp; bestuurders<br />bouw &amp; vastgoed
                   </div>
                 </div>
               </div>
@@ -356,8 +357,9 @@
                   ervan overtuigd zijn dat deze niet op de traditionele wijze te realiseren is.
                 </p>
                 <p class="rounded-md border-l-2 border-orange bg-surface py-2.5 pl-4 text-ink/75">
-                  Deelnemers worden geen lid om te netwerken, maar vanuit de intrinsieke
-                  motivatie om uit te blinken in het toepassen van ketensamenwerking.
+                  Deelnemers worden lid vanuit de intrinsieke motivatie om uit te willen blinken
+                  in het toepassen van ketensamenwerking. Ook biedt het platform de ultieme kans
+                  om te netwerken en ervaringen uit te wisselen met gelijkgestemden.
                 </p>
                 <p>
                   De onderwerpen in het platform maken concreet wat nodig is om, binnen de eigen
@@ -365,7 +367,7 @@
                   excellente ketenspeler.
                 </p>
               </div>
-              <div class="mt-auto border-t border-hairline pt-6">
+              <div class="mt-auto min-w-0 border-t border-hairline pt-6">
                 <div class="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-soft/70">Deelnemende organisaties</div>
                 <div class="mt-3 space-y-4">
                   <div class="relative overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
@@ -436,15 +438,15 @@
               </div>
             </div>
 
-            <div class="flex flex-col rounded-lg border border-hairline bg-white p-6 shadow-sm sm:p-8">
+            <div class="flex min-w-0 flex-col rounded-lg border border-hairline bg-white p-6 shadow-sm sm:p-8">
               <div class="flex items-start gap-4">
                 <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-navy/5 text-navy">
                   <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9 12 4l10 5-10 5-10-5Z"/><path d="M6 11.5V17c0 1.5 3 3 6 3s6-1.5 6-3v-5.5"/><path d="M22 9v6"/></svg>
                 </span>
                 <div>
                   <h4 class="font-display text-lg font-semibold text-navy-deep">High Potential Platform Ketensamenwerking</h4>
-                  <div class="mt-1.5 inline-flex items-center rounded-full bg-orange/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-orange">
-                    Managers, projectleiders &amp; sleutelfiguren &middot; bouw &amp; vastgoed
+                  <div class="-ml-3 mt-1.5 inline-flex items-center rounded-full bg-orange/10 px-3 py-1 text-left text-[11px] font-semibold uppercase tracking-wide text-orange">
+                    Managers, projectleiders &amp; sleutelfiguren<br />bouw &amp; vastgoed
                   </div>
                 </div>
               </div>
@@ -456,8 +458,9 @@
                   wijze te realiseren is.
                 </p>
                 <p class="rounded-md border-l-2 border-orange bg-surface py-2.5 pl-4 text-ink/75">
-                  Deelnemers worden geen lid om te netwerken, maar vanuit de intrinsieke
-                  motivatie om uit te blinken in het toepassen van ketensamenwerking en RGS.
+                  Deelnemers worden lid vanuit de intrinsieke motivatie om uit te willen blinken
+                  in het toepassen van ketensamenwerking/RGS. Ook biedt het platform de ultieme
+                  kans om te netwerken en ervaringen uit te wisselen met gelijkgestemden.
                 </p>
                 <p>
                   De onderwerpen in het platform maken concreet wat nodig is om binnen de eigen
@@ -465,7 +468,7 @@
                   keten zo optimaal mogelijk te laten functioneren.
                 </p>
               </div>
-              <div class="mt-auto border-t border-hairline pt-6">
+              <div class="mt-auto min-w-0 border-t border-hairline pt-6">
                 <div class="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-soft/70">Deelnemende organisaties</div>
                 <div class="mt-3 space-y-4">
                   <div class="relative overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
@@ -547,7 +550,7 @@
             <h2 class="heading-rule mt-5 font-display text-3xl font-semibold md:text-4xl">Jaarprogramma 2026</h2>
           </div>
           <p class="text-base leading-relaxed text-slate-soft md:col-span-7 md:pt-12">
-            Platform Ketensamenwerking kent twee programma&rsquo;s op het terrein van Kasteel de
+            Het Platform Ketensamenwerking kent twee programma&rsquo;s op het terrein van Kasteel de
             Vanenburg: het Executive Platform en het High Potential Platform. Kies hieronder uw
             programma voor de volledige jaarplanning, sprekers en deelnamevoorwaarden.
           </p>
@@ -582,7 +585,7 @@
         <div id="bijeenkomsten-panel-executive" class="bijeenkomsten-panel mt-10 space-y-6" role="tabpanel" aria-labelledby="bijeenkomsten-tab-executive">
 
           <!-- Executive - Bijeenkomst 1 (geweest) -->
-          <article id="bijeenkomst-executive-1" class="relative overflow-hidden rounded-lg border border-hairline bg-white p-8">
+          <article id="bijeenkomst-executive-1" data-end="2026-03-05T20:30:00" class="relative overflow-hidden rounded-lg border border-hairline bg-white p-8">
             <div class="flex flex-wrap items-start justify-between gap-4">
               <div class="flex items-center gap-4">
                 <span class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-navy/5 text-navy">
@@ -591,7 +594,7 @@
                 <div>
                   <div class="flex items-center gap-2">
                     <span class="text-xs font-semibold uppercase tracking-[0.16em] text-orange">Bijeenkomst 1</span>
-                    <span class="rounded-full bg-hairline px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-slate-soft">Geweest</span>
+                    <span class="geweest-badge hidden rounded-full bg-hairline px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-slate-soft">Geweest</span>
                   </div>
                   <div class="mt-1 flex items-center gap-1.5 text-sm text-slate-soft">
                     <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
@@ -632,14 +635,14 @@
               <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>20:30 Einde</div>
             </div>
 
-            <div class="mt-6 flex items-center gap-2.5 rounded-md bg-surface px-4 py-3 text-xs text-slate-soft">
+            <div class="geweest-note hidden mt-6 flex items-center gap-2.5 rounded-md bg-surface px-4 py-3 text-xs text-slate-soft">
               <svg class="icon h-4 w-4 shrink-0 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.5 2.5 5-5"/></svg>
               Deze bijeenkomst heeft al plaatsgevonden. Leden kunnen de opname terugkijken via de SharePoint-omgeving.
             </div>
           </article>
 
           <!-- Executive - Bijeenkomst 2 (geweest) -->
-          <article id="bijeenkomst-executive-2" class="relative overflow-hidden rounded-lg border border-hairline bg-white p-8">
+          <article id="bijeenkomst-executive-2" data-end="2026-06-04T20:30:00" class="relative overflow-hidden rounded-lg border border-hairline bg-white p-8">
             <div class="flex items-center gap-4">
               <span class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-navy/5 text-navy">
                 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6.5 6.5-6.5s6.5 2.9 6.5 6.5"/><circle cx="17.5" cy="9.5" r="2.75"/><path d="M15.8 13.6c2.6.4 4.7 2.7 4.7 5.9"/></svg>
@@ -647,7 +650,7 @@
               <div>
                 <div class="flex items-center gap-2">
                   <span class="text-xs font-semibold uppercase tracking-[0.16em] text-orange">Bijeenkomst 2</span>
-                  <span class="rounded-full bg-hairline px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-slate-soft">Geweest</span>
+                  <span class="geweest-badge hidden rounded-full bg-hairline px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-slate-soft">Geweest</span>
                 </div>
                 <div class="mt-1 flex items-center gap-1.5 text-sm text-slate-soft">
                   <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
@@ -690,21 +693,24 @@
               <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>20:30 Einde</div>
             </div>
 
-            <div class="mt-6 flex items-center gap-2.5 rounded-md bg-surface px-4 py-3 text-xs text-slate-soft">
+            <div class="geweest-note hidden mt-6 flex items-center gap-2.5 rounded-md bg-surface px-4 py-3 text-xs text-slate-soft">
               <svg class="icon h-4 w-4 shrink-0 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.5 2.5 5-5"/></svg>
               Deze bijeenkomst heeft al plaatsgevonden. Leden kunnen de opname terugkijken via de SharePoint-omgeving.
             </div>
           </article>
 
           <!-- Executive - Bijeenkomst 3 -->
-          <article id="bijeenkomst-executive-3" class="group relative overflow-hidden rounded-lg border border-hairline bg-white p-8 transition-colors hover:border-orange/40">
+          <article id="bijeenkomst-executive-3" data-end="2026-09-17T20:30:00" class="group relative overflow-hidden rounded-lg border border-hairline bg-white p-8 transition-colors hover:border-orange/40">
             <span class="absolute inset-y-0 left-0 w-0.5 bg-orange opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"></span>
             <div class="flex items-center gap-4">
               <span class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-navy/5 text-navy">
                 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m15 9-2 6-6 2 2-6 6-2Z"/></svg>
               </span>
               <div>
-                <div class="text-xs font-semibold uppercase tracking-[0.16em] text-orange">Bijeenkomst 3</div>
+                <div class="flex items-center gap-2">
+                  <span class="text-xs font-semibold uppercase tracking-[0.16em] text-orange">Bijeenkomst 3</span>
+                  <span class="geweest-badge hidden rounded-full bg-hairline px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-slate-soft">Geweest</span>
+                </div>
                 <div class="mt-1 flex items-center gap-1.5 text-sm text-slate-soft">
                   <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
                   Donderdag 17 september 2026 &middot; 15:30&ndash;20:00
@@ -744,23 +750,24 @@
               <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>20:30 Einde</div>
             </div>
 
-            <div class="mt-6">
-              <a href="#aanmelden" data-interesse="Executive Platform, Bijeenkomst 3 (17 september 2026)" class="bijeenkomst-cta inline-flex items-center gap-2 rounded-md bg-orange px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-orange/90">
-                Meld u aan voor deze bijeenkomst
-                <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-              </a>
+            <div class="geweest-note hidden mt-6 flex items-center gap-2.5 rounded-md bg-surface px-4 py-3 text-xs text-slate-soft">
+              <svg class="icon h-4 w-4 shrink-0 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.5 2.5 5-5"/></svg>
+              Deze bijeenkomst heeft al plaatsgevonden. Leden kunnen de opname terugkijken via de SharePoint-omgeving.
             </div>
           </article>
 
           <!-- Executive - Bijeenkomst 4 -->
-          <article id="bijeenkomst-executive-4" class="group relative overflow-hidden rounded-lg border border-hairline bg-white p-8 transition-colors hover:border-orange/40">
+          <article id="bijeenkomst-executive-4" data-end="2026-11-12T20:30:00" class="group relative overflow-hidden rounded-lg border border-hairline bg-white p-8 transition-colors hover:border-orange/40">
             <span class="absolute inset-y-0 left-0 w-0.5 bg-orange opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"></span>
             <div class="flex items-center gap-4">
               <span class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-navy/5 text-navy">
                 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg>
               </span>
               <div>
-                <div class="text-xs font-semibold uppercase tracking-[0.16em] text-orange">Bijeenkomst 4</div>
+                <div class="flex items-center gap-2">
+                  <span class="text-xs font-semibold uppercase tracking-[0.16em] text-orange">Bijeenkomst 4</span>
+                  <span class="geweest-badge hidden rounded-full bg-hairline px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-slate-soft">Geweest</span>
+                </div>
                 <div class="mt-1 flex items-center gap-1.5 text-sm text-slate-soft">
                   <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
                   Donderdag 12 november 2026 &middot; 15:30&ndash;20:00
@@ -801,11 +808,9 @@
               <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>20:30 Einde</div>
             </div>
 
-            <div class="mt-6">
-              <a href="#aanmelden" data-interesse="Executive Platform, Bijeenkomst 4 (12 november 2026)" class="bijeenkomst-cta inline-flex items-center gap-2 rounded-md bg-orange px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-orange/90">
-                Meld u aan voor deze bijeenkomst
-                <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-              </a>
+            <div class="geweest-note hidden mt-6 flex items-center gap-2.5 rounded-md bg-surface px-4 py-3 text-xs text-slate-soft">
+              <svg class="icon h-4 w-4 shrink-0 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.5 2.5 5-5"/></svg>
+              Deze bijeenkomst heeft al plaatsgevonden. Leden kunnen de opname terugkijken via de SharePoint-omgeving.
             </div>
           </article>
 
@@ -843,12 +848,13 @@
                 <div class="text-xs font-semibold uppercase tracking-[0.16em] text-orange">Deelnemen</div>
                 <div class="mt-2 font-display text-2xl font-semibold">&euro;1.600 <span class="text-sm font-normal text-white/60">ex. btw per jaar</span></div>
                 <p class="mt-3 max-w-lg text-sm leading-relaxed text-white/75">
-                  Voor de 4 bijeenkomsten van het Executive Platform, inclusief borrel, diner en
-                  introducé (1 live en 3 digitaal). Stapt u later in, dan betaalt u naar rato van het
-                  aantal bijeenkomsten dat nog resteert in het lopende jaar.
+                  U meldt zich aan voor het volledige Executive Platform, niet per losse
+                  bijeenkomst: u ontvangt toegang tot alle (resterende) bijeenkomsten van het
+                  lopende jaar, inclusief borrel, diner en introducé (1 live en 3 digitaal). Stapt
+                  u later in, dan betaalt u naar rato van het aantal bijeenkomsten dat nog resteert.
                 </p>
               </div>
-              <a href="#aanmelden" data-interesse="Executive Platform, volledig jaarprogramma 2026" class="bijeenkomst-cta inline-flex shrink-0 items-center gap-2 rounded-md bg-orange px-5 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-orange/90">
+              <a href="#aanmelden" data-interesse="Executive Platform, (resterende) bijeenkomsten van 2026" class="bijeenkomst-cta inline-flex shrink-0 items-center gap-2 rounded-md bg-orange px-5 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-orange/90">
                 Meld u aan voor het Executive Platform
                 <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
               </a>
@@ -861,7 +867,7 @@
         <div id="bijeenkomsten-panel-highpotential" class="bijeenkomsten-panel mt-10 hidden space-y-6" role="tabpanel" aria-labelledby="bijeenkomsten-tab-highpotential">
 
           <!-- High Potential - Bijeenkomst 1 (geweest) -->
-          <article id="bijeenkomst-hp-1" class="relative overflow-hidden rounded-lg border border-hairline bg-white p-8">
+          <article id="bijeenkomst-hp-1" data-end="2026-03-05T15:30:00" class="relative overflow-hidden rounded-lg border border-hairline bg-white p-8">
             <div class="flex items-center gap-4">
               <span class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-navy/5 text-navy">
                 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>
@@ -869,7 +875,7 @@
               <div>
                 <div class="flex items-center gap-2">
                   <span class="text-xs font-semibold uppercase tracking-[0.16em] text-orange">Bijeenkomst 1</span>
-                  <span class="rounded-full bg-hairline px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-slate-soft">Geweest</span>
+                  <span class="geweest-badge hidden rounded-full bg-hairline px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-slate-soft">Geweest</span>
                 </div>
                 <div class="mt-1 flex items-center gap-1.5 text-sm text-slate-soft">
                   <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
@@ -910,14 +916,14 @@
               <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>15:30&ndash;16:00 Borrel en napraten</div>
             </div>
 
-            <div class="mt-6 flex items-center gap-2.5 rounded-md bg-surface px-4 py-3 text-xs text-slate-soft">
+            <div class="geweest-note hidden mt-6 flex items-center gap-2.5 rounded-md bg-surface px-4 py-3 text-xs text-slate-soft">
               <svg class="icon h-4 w-4 shrink-0 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.5 2.5 5-5"/></svg>
               Deze bijeenkomst heeft al plaatsgevonden. Leden kunnen de opname terugkijken via de SharePoint-omgeving.
             </div>
           </article>
 
           <!-- High Potential - Bijeenkomst 2 (geweest) -->
-          <article id="bijeenkomst-hp-2" class="relative overflow-hidden rounded-lg border border-hairline bg-white p-8">
+          <article id="bijeenkomst-hp-2" data-end="2026-06-04T15:30:00" class="relative overflow-hidden rounded-lg border border-hairline bg-white p-8">
             <div class="flex items-center gap-4">
               <span class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-navy/5 text-navy">
                 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9 12 4l10 5-10 5-10-5Z"/><path d="M6 11.5V17c0 1.5 3 3 6 3s6-1.5 6-3v-5.5"/><path d="M22 9v6"/></svg>
@@ -925,7 +931,7 @@
               <div>
                 <div class="flex items-center gap-2">
                   <span class="text-xs font-semibold uppercase tracking-[0.16em] text-orange">Bijeenkomst 2</span>
-                  <span class="rounded-full bg-hairline px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-slate-soft">Geweest</span>
+                  <span class="geweest-badge hidden rounded-full bg-hairline px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-slate-soft">Geweest</span>
                 </div>
                 <div class="mt-1 flex items-center gap-1.5 text-sm text-slate-soft">
                   <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
@@ -964,21 +970,24 @@
               <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>15:30&ndash;16:00 Borrel en napraten</div>
             </div>
 
-            <div class="mt-6 flex items-center gap-2.5 rounded-md bg-surface px-4 py-3 text-xs text-slate-soft">
+            <div class="geweest-note hidden mt-6 flex items-center gap-2.5 rounded-md bg-surface px-4 py-3 text-xs text-slate-soft">
               <svg class="icon h-4 w-4 shrink-0 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.5 2.5 5-5"/></svg>
               Deze bijeenkomst heeft al plaatsgevonden. Leden kunnen de opname terugkijken via de SharePoint-omgeving.
             </div>
           </article>
 
           <!-- High Potential - Bijeenkomst 3 -->
-          <article id="bijeenkomst-hp-3" class="group relative overflow-hidden rounded-lg border border-hairline bg-white p-8 transition-colors hover:border-orange/40">
+          <article id="bijeenkomst-hp-3" data-end="2026-09-17T15:30:00" class="group relative overflow-hidden rounded-lg border border-hairline bg-white p-8 transition-colors hover:border-orange/40">
             <span class="absolute inset-y-0 left-0 w-0.5 bg-orange opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"></span>
             <div class="flex items-center gap-4">
               <span class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-navy/5 text-navy">
                 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="12" width="3" height="6" rx="0.5"/><rect x="12" y="8" width="3" height="10" rx="0.5"/><rect x="17" y="5" width="3" height="13" rx="0.5"/></svg>
               </span>
               <div>
-                <div class="text-xs font-semibold uppercase tracking-[0.16em] text-orange">Bijeenkomst 3</div>
+                <div class="flex items-center gap-2">
+                  <span class="text-xs font-semibold uppercase tracking-[0.16em] text-orange">Bijeenkomst 3</span>
+                  <span class="geweest-badge hidden rounded-full bg-hairline px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-slate-soft">Geweest</span>
+                </div>
                 <div class="mt-1 flex items-center gap-1.5 text-sm text-slate-soft">
                   <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
                   Donderdag 17 september 2026 &middot; 12:00&ndash;15:30
@@ -1015,23 +1024,24 @@
               <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>15:30&ndash;16:00 Borrel en napraten</div>
             </div>
 
-            <div class="mt-6">
-              <a href="#aanmelden" data-interesse="High Potential Platform, Bijeenkomst 3 (17 september 2026)" class="bijeenkomst-cta inline-flex items-center gap-2 rounded-md bg-orange px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-orange/90">
-                Meld u aan voor deze bijeenkomst
-                <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-              </a>
+            <div class="geweest-note hidden mt-6 flex items-center gap-2.5 rounded-md bg-surface px-4 py-3 text-xs text-slate-soft">
+              <svg class="icon h-4 w-4 shrink-0 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.5 2.5 5-5"/></svg>
+              Deze bijeenkomst heeft al plaatsgevonden. Leden kunnen de opname terugkijken via de SharePoint-omgeving.
             </div>
           </article>
 
           <!-- High Potential - Bijeenkomst 4 -->
-          <article id="bijeenkomst-hp-4" class="group relative overflow-hidden rounded-lg border border-hairline bg-white p-8 transition-colors hover:border-orange/40">
+          <article id="bijeenkomst-hp-4" data-end="2026-11-12T15:30:00" class="group relative overflow-hidden rounded-lg border border-hairline bg-white p-8 transition-colors hover:border-orange/40">
             <span class="absolute inset-y-0 left-0 w-0.5 bg-orange opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true"></span>
             <div class="flex items-center gap-4">
               <span class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-navy/5 text-navy">
                 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m15 9-2 6-6 2 2-6 6-2Z"/></svg>
               </span>
               <div>
-                <div class="text-xs font-semibold uppercase tracking-[0.16em] text-orange">Bijeenkomst 4</div>
+                <div class="flex items-center gap-2">
+                  <span class="text-xs font-semibold uppercase tracking-[0.16em] text-orange">Bijeenkomst 4</span>
+                  <span class="geweest-badge hidden rounded-full bg-hairline px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-slate-soft">Geweest</span>
+                </div>
                 <div class="mt-1 flex items-center gap-1.5 text-sm text-slate-soft">
                   <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
                   Donderdag 12 november 2026 &middot; 12:00&ndash;15:30
@@ -1069,11 +1079,9 @@
               <div class="flex items-center gap-2"><svg class="icon h-4 w-4 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>15:30&ndash;16:00 Borrel en napraten</div>
             </div>
 
-            <div class="mt-6">
-              <a href="#aanmelden" data-interesse="High Potential Platform, Bijeenkomst 4 (12 november 2026)" class="bijeenkomst-cta inline-flex items-center gap-2 rounded-md bg-orange px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-orange/90">
-                Meld u aan voor deze bijeenkomst
-                <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-              </a>
+            <div class="geweest-note hidden mt-6 flex items-center gap-2.5 rounded-md bg-surface px-4 py-3 text-xs text-slate-soft">
+              <svg class="icon h-4 w-4 shrink-0 text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.5 2.5 5-5"/></svg>
+              Deze bijeenkomst heeft al plaatsgevonden. Leden kunnen de opname terugkijken via de SharePoint-omgeving.
             </div>
           </article>
 
@@ -1111,12 +1119,13 @@
                 <div class="text-xs font-semibold uppercase tracking-[0.16em] text-orange">Deelnemen</div>
                 <div class="mt-2 font-display text-2xl font-semibold">&euro;1.400 <span class="text-sm font-normal text-white/60">ex. btw per jaar</span></div>
                 <p class="mt-3 max-w-lg text-sm leading-relaxed text-white/75">
-                  Voor de 4 bijeenkomsten van het High Potential Platform, inclusief lunch, borrel en
-                  introducé (1 live en 3 digitaal). Stapt u later in, dan betaalt u naar rato van het
-                  aantal bijeenkomsten dat nog resteert in het lopende jaar.
+                  U meldt zich aan voor het volledige High Potential Platform, niet per losse
+                  bijeenkomst: u ontvangt toegang tot alle (resterende) bijeenkomsten van het
+                  lopende jaar, inclusief lunch, borrel en introducé (1 live en 3 digitaal). Stapt
+                  u later in, dan betaalt u naar rato van het aantal bijeenkomsten dat nog resteert.
                 </p>
               </div>
-              <a href="#aanmelden" data-interesse="High Potential Platform, volledig jaarprogramma 2026" class="bijeenkomst-cta inline-flex shrink-0 items-center gap-2 rounded-md bg-orange px-5 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-orange/90">
+              <a href="#aanmelden" data-interesse="High Potential Platform, (resterende) bijeenkomsten van 2026" class="bijeenkomst-cta inline-flex shrink-0 items-center gap-2 rounded-md bg-orange px-5 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-orange/90">
                 Meld u aan voor het High Potential Platform
                 <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
               </a>
@@ -1134,14 +1143,43 @@
           <div class="lg:col-span-5">
             <div class="section-label"><span>Doelgroep</span></div>
             <h2 class="heading-rule mt-5 font-display text-3xl font-semibold md:text-4xl">Voor wie is dit platform?</h2>
-            <p class="mt-6 max-w-md text-base leading-relaxed text-slate-soft">
-              Platform Ketensamenwerking is er voor managers, projectleiders en sleutelfiguren die
-              verantwoordelijk zijn voor de kwaliteit van ketensamenwerking en RGS binnen hun
-              organisatie.
-            </p>
+            <div class="mt-6 space-y-4 text-base leading-relaxed text-slate-soft">
+              <p>
+                Het platform richt zich op twee doelgroepen: directeuren/bestuurders (voor hen
+                hebben we het Executive Platform opgezet) en (project)managers, projectleiders en
+                sleutelfiguren (voor hen hebben we het High Potential Platform ontwikkeld) van
+                woningcorporaties en bouwbedrijven die actief zijn in de ontwikkeling, bouw en
+                onderhoud van vastgoed.
+              </p>
+              <div id="doelgroep-more-wrap" class="overflow-hidden transition-[height] duration-500 ease-in-out" style="height: 0px">
+                <div id="doelgroep-more" class="space-y-4">
+                  <p>
+                    Executives zijn voornamelijk strategisch betrokken bij de implementatie van
+                    ketensamenwerking, terwijl High Potentials vaak vanuit de directie of het
+                    management de taak krijgen om ketensamenwerking te implementeren.
+                  </p>
+                  <p>
+                    Voor beide groepen hebben we collegereeksen ontwikkeld. Het
+                    Executive-programma wat meer strategisch, tactisch en het
+                    High Potential-programma wat meer tactisch en operationeel. We denken dat dit
+                    dan ook goed aansluit op de belevingswereld en rollen van beide doelgroepen.
+                  </p>
+                </div>
+              </div>
+              <button
+                type="button"
+                id="doelgroep-more-toggle"
+                aria-expanded="false"
+                aria-controls="doelgroep-more-wrap"
+                class="mt-4 flex items-center gap-1.5 text-sm font-semibold text-navy-deep hover:text-orange"
+              >
+                <span id="doelgroep-more-label">Lees meer</span>
+                <svg id="doelgroep-more-icon" class="icon h-4 w-4 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </button>
+            </div>
           </div>
 
-          <ul class="grid gap-px overflow-hidden rounded-lg border border-hairline bg-hairline sm:grid-cols-2 lg:col-span-7 lg:grid-cols-3">
+          <ul class="grid gap-px self-center overflow-hidden rounded-lg border border-hairline bg-hairline sm:grid-cols-2 lg:col-span-7 lg:grid-cols-3">
             <li class="flex items-center gap-3 bg-white p-5">
               <span class="flex h-10 w-10 items-center justify-center rounded-md bg-navy/5 text-navy">
                 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 12 3l9 8"/><path d="M5 10v9a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1v-9"/></svg>
@@ -1184,7 +1222,7 @@
               formulier en we nemen contact met u op over deelname, kosten en beschikbaarheid.
             </p>
             <div class="mt-9 flex flex-wrap gap-3">
-              <a href="mailto:info@ketenmanagement.com" class="inline-flex items-center gap-2 rounded-md border border-white/25 px-5 py-3 text-sm font-semibold text-white hover:border-white">
+              <a href="mailto:m.noordhuis@platform-ketensamenwerking.nl" class="inline-flex items-center gap-2 rounded-md border border-white/25 px-5 py-3 text-sm font-semibold text-white hover:border-white">
                 <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
                 Stuur een e-mail
               </a>
@@ -1219,16 +1257,11 @@
                   <input id="telefoon" name="telefoon" type="tel" autocomplete="tel" class="mt-2 w-full rounded-md border border-hairline bg-white px-3.5 py-2.5 text-sm text-ink placeholder:text-slate-soft/60 focus:border-navy focus:outline-none focus:ring-2 focus:ring-navy/15" />
                 </div>
                 <div class="sm:col-span-2">
-                  <label for="interesse" class="text-xs font-semibold uppercase tracking-[0.16em] text-navy-deep">Ik heb interesse in</label>
+                  <label for="interesse" class="text-xs font-semibold uppercase tracking-[0.16em] text-navy-deep">Ik heb interesse in het:</label>
                   <select id="interesse" name="interesse" required class="mt-2 w-full rounded-md border border-hairline bg-white px-3.5 py-2.5 text-sm text-ink focus:border-navy focus:outline-none focus:ring-2 focus:ring-navy/15">
                     <option value="" disabled selected>Maak een keuze</option>
-                    <option>Executive Platform, volledig jaarprogramma 2026</option>
-                    <option>Executive Platform, Bijeenkomst 3 (17 september 2026)</option>
-                    <option>Executive Platform, Bijeenkomst 4 (12 november 2026)</option>
-                    <option>High Potential Platform, volledig jaarprogramma 2026</option>
-                    <option>High Potential Platform, Bijeenkomst 3 (17 september 2026)</option>
-                    <option>High Potential Platform, Bijeenkomst 4 (12 november 2026)</option>
-                    <option>Nog niet zeker, graag meer informatie</option>
+                    <option>Executive Platform, (resterende) bijeenkomsten van 2026</option>
+                    <option>High Potential Platform, (resterende) bijeenkomsten van 2026</option>
                   </select>
                 </div>
                 <div class="sm:col-span-2">
@@ -1301,9 +1334,9 @@
         <ul class="mt-5 space-y-3 text-sm text-white/65">
           <li class="text-white">dr.ing. Marcel Noordhuis</li>
           <li>
-            <a href="mailto:info@ketenmanagement.com" class="inline-flex items-center gap-2 hover:text-white">
+            <a href="mailto:m.noordhuis@platform-ketensamenwerking.nl" class="inline-flex items-center gap-2 whitespace-nowrap hover:text-white">
               <svg class="icon h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
-              info@ketenmanagement.com
+              m.noordhuis@platform-ketensamenwerking.nl
             </a>
           </li>
           <li>
@@ -1313,8 +1346,8 @@
             </a>
           </li>
           <li>
-            <a href="https://www.ketenmanagement.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 hover:text-white">
-              ketenmanagement.com
+            <a href="https://www.platform-ketensamenwerking.nl/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 hover:text-white">
+              www.platform-ketensamenwerking.nl
             </a>
           </li>
         </ul>
@@ -1414,19 +1447,31 @@
       });
     });
 
-    const heroMoreToggle = document.getElementById("hero-more-toggle");
-    const heroMoreWrap = document.getElementById("hero-more-wrap");
-    const heroMore = document.getElementById("hero-more");
-    const heroMoreLabel = document.getElementById("hero-more-label");
-    const heroMoreIcon = document.getElementById("hero-more-icon");
-    let heroExpanded = false;
-    heroMoreToggle.addEventListener("click", () => {
-      heroExpanded = !heroExpanded;
-      heroMoreWrap.style.height = heroExpanded ? heroMore.scrollHeight + "px" : "0px";
-      heroMoreToggle.setAttribute("aria-expanded", String(heroExpanded));
-      heroMoreLabel.textContent = heroExpanded ? "Lees minder" : "Lees meer";
-      heroMoreIcon.classList.toggle("-rotate-90", heroExpanded);
+    document.querySelectorAll("article[data-end]").forEach((article) => {
+      const isPast = new Date() > new Date(article.dataset.end);
+      article.querySelectorAll(".geweest-badge, .geweest-note").forEach((el) => {
+        el.classList.toggle("hidden", !isPast);
+      });
     });
+
+    function setupReadMore(prefix) {
+      const toggle = document.getElementById(prefix + "-more-toggle");
+      const wrap = document.getElementById(prefix + "-more-wrap");
+      const more = document.getElementById(prefix + "-more");
+      const label = document.getElementById(prefix + "-more-label");
+      const icon = document.getElementById(prefix + "-more-icon");
+      if (!toggle) return;
+      let expanded = false;
+      toggle.addEventListener("click", () => {
+        expanded = !expanded;
+        wrap.style.height = expanded ? more.scrollHeight + "px" : "0px";
+        toggle.setAttribute("aria-expanded", String(expanded));
+        label.textContent = expanded ? "Lees minder" : "Lees meer";
+        icon.classList.toggle("-rotate-90", expanded);
+      });
+    }
+    setupReadMore("hero");
+    setupReadMore("doelgroep");
 
     document.querySelectorAll(".bijeenkomst-cta").forEach((btn) => {
       btn.addEventListener("click", () => {
@@ -1462,7 +1507,7 @@
         "\n\n" + bericht;
 
       const href =
-        "mailto:info@ketenmanagement.com?subject=" +
+        "mailto:m.noordhuis@platform-ketensamenwerking.nl?subject=" +
         encodeURIComponent("Aanmelding Platform Ketensamenwerking, " + bedrijf) +
         "&body=" + encodeURIComponent(body);
 
